@@ -1,0 +1,2522 @@
+[
+  {
+    "objectID": "MQ001",
+    "title": "John Deere 850K",
+    "description": "Bulldozer de gran potencia para nivelación de terreno, movimiento de tierra pesada y trabajos de despeje.",
+    "brand": "John Deere",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Bulldozer"
+    ],
+    "rating": 4.1,
+    "image_url": "https://dygtyjqp7pi0m.cloudfront.net/iv/1/8102a1bd83709895a5c6f913dfd42e7f.jpg?v=8DE2D3A31549910",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2023,
+      "peso_kg": 12296,
+      "potencia_hp": 102,
+      "hoja_tipo": "Recta (S)"
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 107739652.8,
+        "price_usd": 207191.64,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 94810894.46,
+        "price_usd": 182328.64,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ002",
+    "title": "John Deere 750K",
+    "description": "Bulldozer de gran potencia para nivelación de terreno, movimiento de tierra pesada y trabajos de despeje.",
+    "brand": "John Deere",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Bulldozer"
+    ],
+    "rating": 4.4,
+    "image_url": "https://tse4.mm.bing.net/th/id/OIP.aiO1twhv0kdsi8I5oR4MMAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2020,
+      "peso_kg": 14144,
+      "potencia_hp": 467,
+      "hoja_tipo": "Recta (S)"
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 172046695.6,
+        "price_usd": 330859.03,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 151401092.13,
+        "price_usd": 291155.95,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 5
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ003",
+    "title": "John Deere 320G",
+    "description": "Minicargador compacto y ágil, ideal para trabajos en espacios reducidos y múltiples aplicaciones con accesorios intercambiables.",
+    "brand": "John Deere",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Minicargador"
+    ],
+    "rating": 4.3,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.HQrF_uvDdorea_Vnt3W-6gHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2025,
+      "peso_kg": 40741,
+      "potencia_hp": 134,
+      "capacidad_carga_kg": 1341.55
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 26619788.0,
+        "price_usd": 51191.9,
+        "in_stock": false
+      },
+      "b2b": {
+        "price_crc": 23425413.44,
+        "price_usd": 45048.87,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ004",
+    "title": "Hitachi ZX210",
+    "description": "Excavadora hidráulica de alto rendimiento, ideal para excavación, zanjeo y demolición en obras de construcción e infraestructura.",
+    "brand": "Hitachi",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Excavadora"
+    ],
+    "rating": 3.9,
+    "image_url": "https://tse4.mm.bing.net/th/id/OIP.ixk2Wj9jGpfdnRFIY210jAHaF1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2022,
+      "peso_kg": 11140,
+      "potencia_hp": 201,
+      "alcance_excavacion_m": 6.97
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 67600062.4,
+        "price_usd": 130000.12,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 59488054.91,
+        "price_usd": 114400.11,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 4
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ005",
+    "title": "Grove GMK3050",
+    "description": "Grúa móvil de alta capacidad de izaje, diseñada para montaje industrial y proyectos de gran altura.",
+    "brand": "Grove",
+    "categories": [
+      "Maquinaria Pesada",
+      "Izaje",
+      "Grua"
+    ],
+    "rating": 4.9,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.uNk0K3OC-RJBfkL4ZYhjuQHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2022,
+      "peso_kg": 6739,
+      "potencia_hp": 377,
+      "capacidad_maxima_ton": 77.33
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 315951220.0,
+        "price_usd": 607598.5,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 278037073.6,
+        "price_usd": 534686.68,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 2
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ006",
+    "title": "Case CE 580N",
+    "description": "Retroexcavadora versátil para excavación, carga y zanjeo, ideal para proyectos urbanos y de mediana escala.",
+    "brand": "Case CE",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Retroexcavadora"
+    ],
+    "rating": 4.5,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.sGWv-Y4-cvxsW9j9KPMT5AHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2022,
+      "peso_kg": 40713,
+      "potencia_hp": 304,
+      "capacidad_cucharon_m3": 0.19
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 82882664.8,
+        "price_usd": 159389.74,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 72936745.02,
+        "price_usd": 140262.97,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 3
+      }
+    ]
+  },
+  {
+    "objectID": "MQ007",
+    "title": "Caterpillar 323",
+    "description": "Excavadora hidráulica de alto rendimiento, ideal para excavación, zanjeo y demolición en obras de construcción e infraestructura.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Excavadora"
+    ],
+    "rating": 4.2,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.jjBtcg_p-gyYtvAeVYt5ZAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2019,
+      "peso_kg": 23231,
+      "potencia_hp": 504,
+      "alcance_excavacion_m": 9.94
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 224848800.8,
+        "price_usd": 432401.54,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 197866944.7,
+        "price_usd": 380513.36,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 5
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ008",
+    "title": "Zoomlion ZTC550",
+    "description": "Grúa móvil de alta capacidad de izaje, diseñada para montaje industrial y proyectos de gran altura.",
+    "brand": "Zoomlion",
+    "categories": [
+      "Maquinaria Pesada",
+      "Izaje",
+      "Grua"
+    ],
+    "rating": 4.7,
+    "image_url": "https://www.lectura-specs.com/models/renamed/orig/truck-mounted-telescopic-cranes-ztc550r532-zoomlion.jpg",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2023,
+      "peso_kg": 32696,
+      "potencia_hp": 264,
+      "capacidad_maxima_ton": 229.51
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 169562234.4,
+        "price_usd": 326081.22,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 149214766.27,
+        "price_usd": 286951.47,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ009",
+    "title": "Case CE CX245D",
+    "description": "Excavadora hidráulica de alto rendimiento, ideal para excavación, zanjeo y demolición en obras de construcción e infraestructura.",
+    "brand": "Case CE",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Excavadora"
+    ],
+    "rating": 4.7,
+    "image_url": "https://www.diggerbidder.com/wp-content/uploads/2024/01/6-12.jpg",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2020,
+      "peso_kg": 27059,
+      "potencia_hp": 142,
+      "alcance_excavacion_m": 9.04
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 51698498.8,
+        "price_usd": 99420.19,
+        "in_stock": false
+      },
+      "b2b": {
+        "price_crc": 45494678.94,
+        "price_usd": 87489.77,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ010",
+    "title": "Sakai SW880",
+    "description": "Compactadora vibratoria para pavimentación y compactación de suelos en proyectos de infraestructura vial.",
+    "brand": "Sakai",
+    "categories": [
+      "Maquinaria Pesada",
+      "Pavimentacion",
+      "Compactadora"
+    ],
+    "rating": 4.8,
+    "image_url": "https://d2uhsaoc6ysewq.cloudfront.net/44822/Smooth-Drum-Rollers-Sakai-SW880-1-58350473.jpg",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2024,
+      "peso_kg": 28526,
+      "potencia_hp": 523,
+      "ancho_tambor_m": 1.23
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 67017132.0,
+        "price_usd": 128879.1,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 58975076.16,
+        "price_usd": 113413.61,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ011",
+    "title": "Bomag BW213",
+    "description": "Compactadora vibratoria para pavimentación y compactación de suelos en proyectos de infraestructura vial.",
+    "brand": "Bomag",
+    "categories": [
+      "Maquinaria Pesada",
+      "Pavimentacion",
+      "Compactadora"
+    ],
+    "rating": 4.7,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.pP3E152hsblSinBcOKst8gHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2026,
+      "peso_kg": 7847,
+      "potencia_hp": 463,
+      "ancho_tambor_m": 1.3
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 70676938.8,
+        "price_usd": 135917.19,
+        "in_stock": false
+      },
+      "b2b": {
+        "price_crc": 62195706.14,
+        "price_usd": 119607.13,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ012",
+    "title": "Hitachi ZX350",
+    "description": "Excavadora hidráulica de alto rendimiento, ideal para excavación, zanjeo y demolición en obras de construcción e infraestructura.",
+    "brand": "Hitachi",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Excavadora"
+    ],
+    "rating": 4.6,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.eGnKinbz0DY5xrRVtsJKAAHaEx?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2023,
+      "peso_kg": 29807,
+      "potencia_hp": 130,
+      "alcance_excavacion_m": 6.9
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 71351758.4,
+        "price_usd": 137214.92,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 62789547.39,
+        "price_usd": 120749.13,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 3
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ013",
+    "title": "Caterpillar 120",
+    "description": "Motoniveladora de precisión para nivelación de caminos y preparación de superficies en obras viales.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Motoniveladora"
+    ],
+    "rating": 4.6,
+    "image_url": "https://tse4.mm.bing.net/th/id/OIP.zwYp_6TrZVvfM0baASbnYgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2022,
+      "peso_kg": 28700,
+      "potencia_hp": 385,
+      "ancho_hoja_m": 4.14
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 172510681.2,
+        "price_usd": 331751.31,
+        "in_stock": false
+      },
+      "b2b": {
+        "price_crc": 151809399.46,
+        "price_usd": 291941.15,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ014",
+    "title": "Caterpillar 140",
+    "description": "Motoniveladora de precisión para nivelación de caminos y preparación de superficies en obras viales.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Motoniveladora"
+    ],
+    "rating": 3.9,
+    "image_url": "https://tse2.mm.bing.net/th/id/OIP.82R5o56VeYuHu6K_fit9YwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2022,
+      "peso_kg": 8003,
+      "potencia_hp": 428,
+      "ancho_hoja_m": 4.07
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 201029670.4,
+        "price_usd": 386595.52,
+        "in_stock": false
+      },
+      "b2b": {
+        "price_crc": 176906109.95,
+        "price_usd": 340204.06,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ015",
+    "title": "Caterpillar CS78",
+    "description": "Compactadora vibratoria para pavimentación y compactación de suelos en proyectos de infraestructura vial.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Pavimentacion",
+      "Compactadora"
+    ],
+    "rating": 5.0,
+    "image_url": "https://th.bing.com/th/id/R.d415d70a8907dbf6a02ed37ee7328e6f?rik=0wF5ok6TQDWCBA&pid=ImgRaw&r=0",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2020,
+      "peso_kg": 20256,
+      "potencia_hp": 533,
+      "ancho_tambor_m": 1.99
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 98448090.0,
+        "price_usd": 189323.25,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 86634319.2,
+        "price_usd": 166604.46,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ016",
+    "title": "Shantui SD16",
+    "description": "Bulldozer de gran potencia para nivelación de terreno, movimiento de tierra pesada y trabajos de despeje.",
+    "brand": "Shantui",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Bulldozer"
+    ],
+    "rating": 4.6,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.7gdmQDFLu-3-YueyXVx6-QHaF3?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2024,
+      "peso_kg": 34714,
+      "potencia_hp": 415,
+      "hoja_tipo": "Semi-U (SU)"
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 97597396.0,
+        "price_usd": 187687.3,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 85885708.48,
+        "price_usd": 165164.82,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ017",
+    "title": "JCB 3CX",
+    "description": "Retroexcavadora versátil para excavación, carga y zanjeo, ideal para proyectos urbanos y de mediana escala.",
+    "brand": "JCB",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Retroexcavadora"
+    ],
+    "rating": 4.6,
+    "image_url": "https://tse2.mm.bing.net/th/id/OIP.AQv5QNoEOdzwJhiVxOUU5AHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2023,
+      "peso_kg": 28283,
+      "potencia_hp": 197,
+      "capacidad_cucharon_m3": 0.33
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 51327328.0,
+        "price_usd": 98706.4,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 45168048.64,
+        "price_usd": 86861.63,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 4
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ018",
+    "title": "Kubota SVL75",
+    "description": "Minicargador compacto y ágil, ideal para trabajos en espacios reducidos y múltiples aplicaciones con accesorios intercambiables.",
+    "brand": "Kubota",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Minicargador"
+    ],
+    "rating": 5.0,
+    "image_url": "https://tse2.mm.bing.net/th/id/OIP.L_vKSRp8K9m89rSjUxmXUAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2021,
+      "peso_kg": 9679,
+      "potencia_hp": 401,
+      "capacidad_carga_kg": 1189.27
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 47804640.0,
+        "price_usd": 91932.0,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 42068083.2,
+        "price_usd": 80900.16,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 3
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 2
+      }
+    ]
+  },
+  {
+    "objectID": "MQ019",
+    "title": "Hamm HD+90",
+    "description": "Compactadora vibratoria para pavimentación y compactación de suelos en proyectos de infraestructura vial.",
+    "brand": "Hamm",
+    "categories": [
+      "Maquinaria Pesada",
+      "Pavimentacion",
+      "Compactadora"
+    ],
+    "rating": 4.7,
+    "image_url": "https://tse2.mm.bing.net/th/id/OIP.0_UxgqUR1gHq93rbf8e39gHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2026,
+      "peso_kg": 21043,
+      "potencia_hp": 173,
+      "ancho_tambor_m": 2.09
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 69738219.2,
+        "price_usd": 134111.96,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 61369632.9,
+        "price_usd": 118018.52,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ020",
+    "title": "Caterpillar D9",
+    "description": "Bulldozer de gran potencia para nivelación de terreno, movimiento de tierra pesada y trabajos de despeje.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Bulldozer"
+    ],
+    "rating": 4.1,
+    "image_url": "https://tse2.mm.bing.net/th/id/OIP.XuRtgWetiEnyiGClPl4c6QHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2024,
+      "peso_kg": 41500,
+      "potencia_hp": 202,
+      "hoja_tipo": "Recta (S)"
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 169012376.0,
+        "price_usd": 325023.8,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 148730890.88,
+        "price_usd": 286020.94,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 1
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ021",
+    "title": "Case CE 821G",
+    "description": "Cargador de ruedas robusto diseñado para carga y transporte de materiales a gran volumen en canteras y sitios de construcción.",
+    "brand": "Case CE",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Cargador de Ruedas"
+    ],
+    "rating": 3.9,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.uN4Nw9WKN-85nYJM74HU_gHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2024,
+      "peso_kg": 7103,
+      "potencia_hp": 502,
+      "capacidad_cucharon_m3": 4.54
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 106771277.6,
+        "price_usd": 205329.38,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 93958724.29,
+        "price_usd": 180689.85,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ022",
+    "title": "Caterpillar 966",
+    "description": "Cargador de ruedas robusto diseñado para carga y transporte de materiales a gran volumen en canteras y sitios de construcción.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Cargador de Ruedas"
+    ],
+    "rating": 4.0,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.c60Yd-Fj0pfTWdCh06yxiAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2024,
+      "peso_kg": 9337,
+      "potencia_hp": 198,
+      "capacidad_cucharon_m3": 2.14
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 137894484.0,
+        "price_usd": 265181.7,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 121347145.92,
+        "price_usd": 233359.9,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 2
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ023",
+    "title": "Liebherr L 550",
+    "description": "Cargador de ruedas robusto diseñado para carga y transporte de materiales a gran volumen en canteras y sitios de construcción.",
+    "brand": "Liebherr",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Cargador de Ruedas"
+    ],
+    "rating": 4.4,
+    "image_url": "https://tse2.mm.bing.net/th/id/OIP.icj2fdeG_pNxybL92zPgMQHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2026,
+      "peso_kg": 37717,
+      "potencia_hp": 292,
+      "capacidad_cucharon_m3": 3.19
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 71007336.4,
+        "price_usd": 136552.57,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 62486456.03,
+        "price_usd": 120166.26,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ024",
+    "title": "Caterpillar 730",
+    "description": "Camión de volteo articulado para transporte de materiales pesados en terrenos difíciles y proyectos de minería.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Transporte",
+      "Camiones de Volteo"
+    ],
+    "rating": 4.0,
+    "image_url": "https://tse2.mm.bing.net/th/id/OIP.X2hOTQ3Awcl2dleTxPArsQHaGa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2023,
+      "peso_kg": 14150,
+      "potencia_hp": 216,
+      "capacidad_carga_ton": 25.5
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 204885454.8,
+        "price_usd": 394010.49,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 180299200.22,
+        "price_usd": 346729.23,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 3
+      }
+    ]
+  },
+  {
+    "objectID": "MQ025",
+    "title": "Hyster H50FT",
+    "description": "Montacargas industrial para manejo eficiente de materiales en bodegas, centros de distribución y patios de carga.",
+    "brand": "Hyster",
+    "categories": [
+      "Maquinaria Pesada",
+      "Manejo de Materiales",
+      "Montacargas"
+    ],
+    "rating": 4.0,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.KRyTLaiaoBe2GCVntW0r3gHaFk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2025,
+      "peso_kg": 33077,
+      "potencia_hp": 549,
+      "capacidad_carga_kg": 2253.6
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 14312948.0,
+        "price_usd": 27524.9,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 12595394.24,
+        "price_usd": 24221.91,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ026",
+    "title": "JCB 4CX",
+    "description": "Retroexcavadora versátil para excavación, carga y zanjeo, ideal para proyectos urbanos y de mediana escala.",
+    "brand": "JCB",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Retroexcavadora"
+    ],
+    "rating": 4.0,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.asj9IY19XXp4fRF4IxsTQQHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2026,
+      "peso_kg": 14065,
+      "potencia_hp": 350,
+      "capacidad_cucharon_m3": 0.94
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 50252072.0,
+        "price_usd": 96638.6,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 44221823.36,
+        "price_usd": 85041.97,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 4
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 2
+      }
+    ]
+  },
+  {
+    "objectID": "MQ027",
+    "title": "Caterpillar GP25N",
+    "description": "Montacargas industrial para manejo eficiente de materiales en bodegas, centros de distribución y patios de carga.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Manejo de Materiales",
+      "Montacargas"
+    ],
+    "rating": 4.1,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.Xy-KzxSVuItaSh0GDIf3OwHaJ4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2020,
+      "peso_kg": 8087,
+      "potencia_hp": 530,
+      "capacidad_carga_kg": 1857.74
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 32849772.8,
+        "price_usd": 63172.64,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 28907800.06,
+        "price_usd": 55591.92,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 1
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 3
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ028",
+    "title": "Volvo CE L150",
+    "description": "Cargador de ruedas robusto diseñado para carga y transporte de materiales a gran volumen en canteras y sitios de construcción.",
+    "brand": "Volvo CE",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Cargador de Ruedas"
+    ],
+    "rating": 4.4,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.G1oRGXUeL6rOWybvp_wSzQHaEA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2025,
+      "peso_kg": 15484,
+      "potencia_hp": 495,
+      "capacidad_cucharon_m3": 3.02
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 182714589.2,
+        "price_usd": 351374.21,
+        "in_stock": false
+      },
+      "b2b": {
+        "price_crc": 160788838.5,
+        "price_usd": 309209.3,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ029",
+    "title": "Bobcat S650",
+    "description": "Minicargador compacto y ágil, ideal para trabajos en espacios reducidos y múltiples aplicaciones con accesorios intercambiables.",
+    "brand": "Bobcat",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Minicargador"
+    ],
+    "rating": 4.7,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.7sLmya6TvPkeWTuhbuWAYAHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2026,
+      "peso_kg": 30216,
+      "potencia_hp": 285,
+      "capacidad_carga_kg": 958.98
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 29633448.0,
+        "price_usd": 56987.4,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 26077434.24,
+        "price_usd": 50148.91,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 1
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ030",
+    "title": "Hyundai HL940",
+    "description": "Cargador de ruedas robusto diseñado para carga y transporte de materiales a gran volumen en canteras y sitios de construcción.",
+    "brand": "Hyundai",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Cargador de Ruedas"
+    ],
+    "rating": 4.7,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.SkUTZYxpAEyH9Zs7I8GkUQHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2019,
+      "peso_kg": 41256,
+      "potencia_hp": 530,
+      "capacidad_cucharon_m3": 2.88
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 68357057.6,
+        "price_usd": 131455.88,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 60154210.69,
+        "price_usd": 115681.17,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 2
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 2
+      }
+    ]
+  },
+  {
+    "objectID": "MQ031",
+    "title": "Volvo CE EC300",
+    "description": "Excavadora hidráulica de alto rendimiento, ideal para excavación, zanjeo y demolición en obras de construcción e infraestructura.",
+    "brand": "Volvo CE",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Excavadora"
+    ],
+    "rating": 4.4,
+    "image_url": "https://tse4.mm.bing.net/th/id/OIP.2acSrEnpKns8I302U9Ee4gHaD1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2023,
+      "peso_kg": 12507,
+      "potencia_hp": 439,
+      "alcance_excavacion_m": 7.09
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 249107029.6,
+        "price_usd": 479051.98,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 219214186.05,
+        "price_usd": 421565.74,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 1
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ032",
+    "title": "Caterpillar 450",
+    "description": "Retroexcavadora versátil para excavación, carga y zanjeo, ideal para proyectos urbanos y de mediana escala.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Retroexcavadora"
+    ],
+    "rating": 3.9,
+    "image_url": "https://s7d2.scene7.com/is/image/Caterpillar/CM20250625-a4622-1787a",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2025,
+      "peso_kg": 12310,
+      "potencia_hp": 240,
+      "capacidad_cucharon_m3": 0.13
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 79449905.6,
+        "price_usd": 152788.28,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 69915916.93,
+        "price_usd": 134453.69,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 1
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ033",
+    "title": "Komatsu GD675",
+    "description": "Motoniveladora de precisión para nivelación de caminos y preparación de superficies en obras viales.",
+    "brand": "Komatsu",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Motoniveladora"
+    ],
+    "rating": 4.3,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.Fl-d7qFo77ezKxg7lTThwwHaFs?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2023,
+      "peso_kg": 5212,
+      "potencia_hp": 459,
+      "ancho_hoja_m": 3.87
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 112265358.4,
+        "price_usd": 215894.92,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 98793515.39,
+        "price_usd": 189987.53,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 1
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 5
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ034",
+    "title": "Liebherr LTM 1050",
+    "description": "Grúa móvil de alta capacidad de izaje, diseñada para montaje industrial y proyectos de gran altura.",
+    "brand": "Liebherr",
+    "categories": [
+      "Maquinaria Pesada",
+      "Izaje",
+      "Grua"
+    ],
+    "rating": 3.9,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.HzfKfwNKZDX-PqTPfIXAdQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2020,
+      "peso_kg": 16708,
+      "potencia_hp": 349,
+      "capacidad_maxima_ton": 71.81
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 228867662.4,
+        "price_usd": 440130.12,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 201403542.91,
+        "price_usd": 387314.51,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ035",
+    "title": "Bomag BW177",
+    "description": "Compactadora vibratoria para pavimentación y compactación de suelos en proyectos de infraestructura vial.",
+    "brand": "Bomag",
+    "categories": [
+      "Maquinaria Pesada",
+      "Pavimentacion",
+      "Compactadora"
+    ],
+    "rating": 4.2,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.dx67ZSGmTZfCk9_6t8-SPwHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2022,
+      "peso_kg": 38270,
+      "potencia_hp": 401,
+      "ancho_tambor_m": 2.21
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 42945749.6,
+        "price_usd": 82587.98,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 37792259.65,
+        "price_usd": 72677.42,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ036",
+    "title": "Case CE 1150M",
+    "description": "Bulldozer de gran potencia para nivelación de terreno, movimiento de tierra pesada y trabajos de despeje.",
+    "brand": "Case CE",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Bulldozer"
+    ],
+    "rating": 4.1,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.M1t9VTIxotsosFknPvL4owHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2019,
+      "peso_kg": 15587,
+      "potencia_hp": 366,
+      "hoja_tipo": "Recta (S)"
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 129867270.0,
+        "price_usd": 249744.75,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 114283197.6,
+        "price_usd": 219775.38,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 1
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ037",
+    "title": "Volvo CE A30G",
+    "description": "Camión de volteo articulado para transporte de materiales pesados en terrenos difíciles y proyectos de minería.",
+    "brand": "Volvo CE",
+    "categories": [
+      "Maquinaria Pesada",
+      "Transporte",
+      "Camiones de Volteo"
+    ],
+    "rating": 5.0,
+    "image_url": "https://th.bing.com/th/id/R.ddcaf1f7934da663c37518f28f0ff2d1?rik=nNYorowk66uhdg&pid=ImgRaw&r=0",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2020,
+      "peso_kg": 37021,
+      "potencia_hp": 99,
+      "capacidad_carga_ton": 32.91
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 242031368.8,
+        "price_usd": 465444.94,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 212987604.54,
+        "price_usd": 409591.55,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 2
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 3
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ038",
+    "title": "New Holland B95C",
+    "description": "Retroexcavadora versátil para excavación, carga y zanjeo, ideal para proyectos urbanos y de mediana escala.",
+    "brand": "New Holland",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Retroexcavadora"
+    ],
+    "rating": 4.0,
+    "image_url": "https://images.tractorzoom.com/lot/2013-new-holland-b95c-backhoe-b96b33d4-4ade-427d-9ccb-7acdd2032bb2/img-1.jpeg",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2019,
+      "peso_kg": 25153,
+      "potencia_hp": 212,
+      "capacidad_cucharon_m3": 1.01
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 77091164.8,
+        "price_usd": 148252.24,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 67840225.02,
+        "price_usd": 130461.97,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 2
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 1
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ039",
+    "title": "Mitsubishi FG25N",
+    "description": "Montacargas industrial para manejo eficiente de materiales en bodegas, centros de distribución y patios de carga.",
+    "brand": "Mitsubishi",
+    "categories": [
+      "Maquinaria Pesada",
+      "Manejo de Materiales",
+      "Montacargas"
+    ],
+    "rating": 4.5,
+    "image_url": "https://tse4.mm.bing.net/th/id/OIP.Z3uNO9nTnTpMW3sDSH-PQAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2026,
+      "peso_kg": 10161,
+      "potencia_hp": 133,
+      "capacidad_carga_kg": 3664.82
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 22071868.0,
+        "price_usd": 42445.9,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 19423243.84,
+        "price_usd": 37352.39,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 4
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 2
+      }
+    ]
+  },
+  {
+    "objectID": "MQ040",
+    "title": "John Deere 350P",
+    "description": "Excavadora hidráulica de alto rendimiento, ideal para excavación, zanjeo y demolición en obras de construcción e infraestructura.",
+    "brand": "John Deere",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Excavadora"
+    ],
+    "rating": 4.3,
+    "image_url": "https://tse2.mm.bing.net/th/id/OIP.e5kDas9OkkCxxXu6oe4jnwHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2021,
+      "peso_kg": 39911,
+      "potencia_hp": 482,
+      "alcance_excavacion_m": 10.67
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 62118248.4,
+        "price_usd": 119458.17,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 54664058.59,
+        "price_usd": 105123.19,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 4
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ041",
+    "title": "Caterpillar D8",
+    "description": "Bulldozer de gran potencia para nivelación de terreno, movimiento de tierra pesada y trabajos de despeje.",
+    "brand": "Caterpillar",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Bulldozer"
+    ],
+    "rating": 4.8,
+    "image_url": "https://s7d2.scene7.com/is/image/Caterpillar/CM20210820-8fee3-55af0",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2021,
+      "peso_kg": 36148,
+      "potencia_hp": 371,
+      "hoja_tipo": "Angular (A)"
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 136953486.8,
+        "price_usd": 263372.09,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 120519068.38,
+        "price_usd": 231767.44,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 1
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ042",
+    "title": "Komatsu WA320",
+    "description": "Cargador de ruedas robusto diseñado para carga y transporte de materiales a gran volumen en canteras y sitios de construcción.",
+    "brand": "Komatsu",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Cargador de Ruedas"
+    ],
+    "rating": 4.6,
+    "image_url": "https://tse1.mm.bing.net/th/id/OIP.F6RaJVD_sY66uLmO1Nmh4QHaFs?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Reacondicionado",
+      "año": 2022,
+      "peso_kg": 44753,
+      "potencia_hp": 306,
+      "capacidad_cucharon_m3": 4.32
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 105309302.8,
+        "price_usd": 202517.89,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 92672186.46,
+        "price_usd": 178215.74,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 2
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 4
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  },
+  {
+    "objectID": "MQ043",
+    "title": "Komatsu D85",
+    "description": "Bulldozer de gran potencia para nivelación de terreno, movimiento de tierra pesada y trabajos de despeje.",
+    "brand": "Komatsu",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Bulldozer"
+    ],
+    "rating": 4.2,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.CQCKElwDHe9rbLVLZLH-OAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Usado",
+      "año": 2023,
+      "peso_kg": 18182,
+      "potencia_hp": 455,
+      "hoja_tipo": "Recta (S)"
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 123993433.2,
+        "price_usd": 238448.91,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 109114221.22,
+        "price_usd": 209835.04,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 1
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 2
+      }
+    ]
+  },
+  {
+    "objectID": "MQ044",
+    "title": "Komatsu D155",
+    "description": "Bulldozer de gran potencia para nivelación de terreno, movimiento de tierra pesada y trabajos de despeje.",
+    "brand": "Komatsu",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Bulldozer"
+    ],
+    "rating": 4.6,
+    "image_url": "https://tse2.mm.bing.net/th/id/OIP.T-giKhlE9tESc3dPRUTsmQHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2026,
+      "peso_kg": 29472,
+      "potencia_hp": 314,
+      "hoja_tipo": "Angular (A)"
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 285016290.0,
+        "price_usd": 548108.25,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 250814335.2,
+        "price_usd": 482335.26,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 0
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 0
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 1
+      }
+    ]
+  },
+  {
+    "objectID": "MQ045",
+    "title": "XCMG XE215",
+    "description": "Excavadora hidráulica de alto rendimiento, ideal para excavación, zanjeo y demolición en obras de construcción e infraestructura.",
+    "brand": "XCMG",
+    "categories": [
+      "Maquinaria Pesada",
+      "Movimiento de Tierra",
+      "Excavadora"
+    ],
+    "rating": 4.3,
+    "image_url": "https://tse3.mm.bing.net/th/id/OIP.r-a-CLX28NjP3QMKNaEb7AHaFY?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "facets": {
+      "condicion": "Nuevo",
+      "año": 2024,
+      "peso_kg": 19725,
+      "potencia_hp": 122,
+      "alcance_excavacion_m": 10.14
+    },
+    "pricing": {
+      "b2c": {
+        "price_crc": 71732746.8,
+        "price_usd": 137947.59,
+        "in_stock": true
+      },
+      "b2b": {
+        "price_crc": 63124817.18,
+        "price_usd": 121393.88,
+        "min_order_quantity": 1,
+        "volume_discounts": [
+          {
+            "min_units": 2,
+            "discount_pct": 0.05
+          },
+          {
+            "min_units": 4,
+            "discount_pct": 0.1
+          }
+        ]
+      }
+    },
+    "locations": [
+      {
+        "site": "Cartago Centro",
+        "stock_quantity": 2
+      },
+      {
+        "site": "San José",
+        "stock_quantity": 2
+      },
+      {
+        "site": "Alajuela",
+        "stock_quantity": 0
+      }
+    ]
+  }
+]
