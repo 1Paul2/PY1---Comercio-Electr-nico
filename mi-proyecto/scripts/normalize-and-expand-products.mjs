@@ -202,6 +202,41 @@ function cloneProduct(seed, ordinal, objectIdValue) {
   return normalizeProduct(clone)
 }
 
+function slugify(input) {
+  return String(input || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+}
+
+function appendVariantParam(url, variantId) {
+  const separator = String(url).includes('?') ? '&' : '?'
+  return `${url}${separator}variant=${encodeURIComponent(variantId)}`
+}
+
+function buildUniqueDescription(product, occurrenceIndex) {
+  const base = String(product.description || '').trim().replace(/\s+/g, ' ').replace(/[.\s]*$/, '')
+  const condition = String(product?.facets?.condition || 'N/A')
+  const year = sanitizeNumber(product?.facets?.year, 0)
+  return `${base}. Model: ${product.title}. Variant: ${occurrenceIndex + 1}. Condition: ${condition}. Year: ${year}.`
+}
+
+function enforceUniquenessByModel(products) {
+  const modelCounter = new Map()
+
+  for (const product of products) {
+    const modelKey = String(product.title || '').trim().toLowerCase()
+    const occurrenceIndex = modelCounter.get(modelKey) || 0
+    modelCounter.set(modelKey, occurrenceIndex + 1)
+
+    const variantId = `${slugify(product.title)}-${product.objectID}-${occurrenceIndex + 1}`
+    product.image_url = appendVariantParam(product.image_url, variantId)
+    product.description = buildUniqueDescription(product, occurrenceIndex)
+  }
+}
+
 function main() {
   const products = parseProducts().map((item) => normalizeProduct(item))
 
@@ -232,6 +267,8 @@ function main() {
     products.push(candidate)
     ordinal += 1
   }
+
+  enforceUniquenessByModel(products)
 
   writeFileSync(SOURCE_PATH, `${JSON.stringify(products, null, 2)}\n`)
 
