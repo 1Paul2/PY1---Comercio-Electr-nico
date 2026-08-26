@@ -25,6 +25,26 @@ for (const file of files) {
   products = products.concat(withCategory)
 }
 
+async function configureSettings() {
+  await client.setSettings({
+    indexName: 'grupo-07_products',
+    indexSettings: {
+      searchableAttributes: [
+        'title',
+        'brand',
+        'category_facet',
+        'description'
+      ],
+      attributesForFaceting: [
+        'category_facet',
+        'brand_facet',
+        'pricing.b2c.price_crc'
+      ]
+    }
+  })
+  console.log('Configuración de facets y searchable attributes aplicada.')
+}
+
 async function seed() {
   const { taskID } = await client.saveObjects({
     indexName: 'grupo-07_products',
@@ -33,6 +53,8 @@ async function seed() {
 
   console.log(`Indexación completa. Task ID: ${taskID}`)
   console.log(`${products.length} productos enviados a Algolia.`)
+
+  await configureSettings()
 }
 
 seed().catch((err) => {
