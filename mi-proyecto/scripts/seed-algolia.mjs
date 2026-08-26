@@ -1,5 +1,6 @@
 import { algoliasearch } from 'algoliasearch'
-import { readFileSync } from 'fs'
+import { readFileSync, readdirSync } from 'fs'
+import { join } from 'path'
 import 'dotenv/config'
 
 const appId = process.env.ALGOLIA_APP_ID
@@ -12,11 +13,21 @@ if (!appId || !adminKey) {
 
 const client = algoliasearch(appId, adminKey)
 
-const products = JSON.parse(readFileSync('./data/products.json', 'utf-8'))
+const dataDir = './data'
+const files = readdirSync(dataDir).filter(f => f.endsWith('.json'))
+
+let products = []
+
+for (const file of files) {
+  const categoria = file.replace('.json', '')
+  const content = JSON.parse(readFileSync(join(dataDir, file), 'utf-8'))
+  const withCategory = content.map(p => ({ ...p, categoria }))
+  products = products.concat(withCategory)
+}
 
 async function seed() {
   const { taskID } = await client.saveObjects({
-    indexName: 'grupo-07_products', 
+    indexName: 'grupo-07_products',
     objects: products,
   })
 
