@@ -1,11 +1,12 @@
 import { InstantSearch } from 'react-instantsearch'
 import { searchClient } from '../features/catalog/searchClient'
+import SearchHeader from '../features/catalog/SearchHeader'
 import Catalog from '../features/catalog/Catalog'
 
 function Productos() {
   return (
     <InstantSearch searchClient={searchClient} indexName="grupo-07_products">
-      <h1>Catálogo de Productos</h1>
+      <SearchHeader />
       <Catalog />
     </InstantSearch>
   )

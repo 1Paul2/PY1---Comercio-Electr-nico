@@ -1,27 +1,24 @@
-import { SearchBox, Hits, Stats } from 'react-instantsearch'
+import { useState } from 'react'
+import { Hits, Stats } from 'react-instantsearch'
 import Filters from './Filters'
 import ProductCard from './ProductCard'
 import Pagination from './Pagination'
 
 function Catalog() {
+  const [filtersOpen, setFiltersOpen] = useState(true)
+
   return (
     <div className="catalog">
-      <div className="catalog__searchbar">
-        <SearchBox
-          placeholder="Buscar por nombre, marca o categoría..."
-          translations={{ submitButtonTitle: 'Buscar', resetButtonTitle: 'Limpiar' }}
-        />
-        <Stats
-          translations={{
-            rootElementText({ nbHits, processingTimeMS }) {
-              return `${nbHits} productos encontrados (${processingTimeMS} ms)`
-            },
-          }}
-        />
-      </div>
+      <Stats
+        translations={{
+          rootElementText({ nbHits }) {
+            return `${nbHits.toLocaleString()} productos encontrados`
+          },
+        }}
+      />
 
       <div className="catalog__body">
-        <Filters />
+        <Filters isOpen={filtersOpen} onToggle={() => setFiltersOpen((o) => !o)} />
 
         <div className="catalog__results">
           <Hits hitComponent={ProductCard} classNames={{ list: 'catalog__grid' }} />
