@@ -1,23 +1,16 @@
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Productos from './pages/Productos'
+import { ThemeProvider } from './context/ThemeContext'
 
 function App() {
   return (
-    <div>
-      <nav>
-        <Link to="/">Inicio</Link>
-        {' | '}
-        <Link to="/productos">Productos</Link>
-      </nav>
-      <br />
-
+    <ThemeProvider>
       <Routes>
         <Route path="/" element={<Home />} />
-        
         <Route path="/productos" element={<Productos />} />
       </Routes>
-    </div>
+    </ThemeProvider>
   )
 }
 
