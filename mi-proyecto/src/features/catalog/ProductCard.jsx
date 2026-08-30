@@ -1,10 +1,5 @@
 import { Link } from 'react-router-dom'
-
-const priceFormatter = new Intl.NumberFormat('es-CR', {
-  style: 'currency',
-  currency: 'CRC',
-  maximumFractionDigits: 0,
-})
+import { formatCRC } from './format'
 
 function ProductCard({ hit }) {
   const price = hit?.pricing?.b2c?.price_crc
@@ -29,9 +24,7 @@ function ProductCard({ hit }) {
         <p className="product-card__brand">{hit.brand}</p>
 
         <div className="product-card__footer">
-          <span className="product-card__price">
-            {typeof price === 'number' ? priceFormatter.format(price) : 'Precio no disponible'}
-          </span>
+          <span className="product-card__price">{formatCRC(price)}</span>
           <span className={`product-card__stock ${inStock ? 'in-stock' : 'out-of-stock'}`}>
             {inStock ? 'Disponible' : 'Agotado'}
           </span>
