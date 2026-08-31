@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <Header />
-      <h1>Bienvenido a Niggalandia</h1>
+      <h1>Bienvenido a Maquinaria CR</h1>
     </>
   )
 }

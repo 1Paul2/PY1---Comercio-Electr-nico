@@ -1,8 +1,24 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { SearchBox } from 'react-instantsearch'
 import ThemeToggle from '../../components/ThemeToggle'
 
-function SearchHeader() {
+function SearchHeader({ redirectSearchTo }) {
+  const navigate = useNavigate()
+
+  const redirectProps = redirectSearchTo
+    ? {
+        searchAsYouType: false,
+        queryHook: (query, search) => {
+          const trimmed = query.trim()
+          if (trimmed) {
+            navigate(`${redirectSearchTo}?q=${encodeURIComponent(trimmed)}`)
+          } else {
+            search(query)
+          }
+        },
+      }
+    : {}
+
   return (
     <header className="search-header">
       <Link to="/" className="site-header__logo">
@@ -19,6 +35,7 @@ function SearchHeader() {
           placeholder="Buscar productos..."
           translations={{ submitButtonTitle: 'Buscar', resetButtonTitle: 'Limpiar' }}
           classNames={{ root: 'search-header__box' }}
+          {...redirectProps}
         />
       </div>
 
