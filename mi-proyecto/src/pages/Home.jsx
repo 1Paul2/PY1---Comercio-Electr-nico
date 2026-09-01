@@ -1,23 +1,8 @@
-import { Link } from 'react-router-dom'
 import { InstantSearch } from 'react-instantsearch'
 import { searchClient } from '../features/catalog/searchClient'
 import SearchHeader from '../features/catalog/SearchHeader'
+import CategoryShowcase from '../features/catalog/CategoryShowcase'
 import Footer from '../components/Footer'
-
-const CATEGORIES = [
-  { label: 'Excavadoras', slug: 'Excavadora' },
-  { label: 'Bulldozers', slug: 'Bulldozer' },
-  { label: 'Cargadores de Ruedas', slug: 'Cargador de Ruedas' },
-  { label: 'Retroexcavadoras', slug: 'Retroexcavadora' },
-  { label: 'Grúas', slug: 'Grúa' },
-  { label: 'Montacargas', slug: 'Montacargas' },
-  { label: 'Compactadoras', slug: 'Compactadora' },
-  { label: 'Mezcladoras de Concreto', slug: 'Mezcladora de Concreto' },
-  { label: 'Minicargadores', slug: 'Minicargador' },
-  { label: 'Motoniveladoras', slug: 'Motoniveladora' },
-  { label: 'Camiones de Volteo', slug: 'Camión de Volteo' },
-  { label: 'Tractores Agrícolas', slug: 'Tractor Agrícola' },
-]
 
 const VALUE_PROPS = [
   {
@@ -44,20 +29,7 @@ function Home() {
         <p>Buscá entre cientos de equipos y repuestos con disponibilidad y precio en tiempo real.</p>
       </section>
 
-      <section className="home-categories">
-        <h2>Explorá por categoría</h2>
-        <div className="category-grid">
-          {CATEGORIES.map((cat) => (
-            <Link
-              key={cat.slug}
-              to={`/productos?categoria=${encodeURIComponent(cat.slug)}`}
-              className="category-card"
-            >
-              <span className="category-card__label">{cat.label}</span>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <CategoryShowcase />
 
       <section className="home-value-props">
         <div className="value-props">
