@@ -11,11 +11,15 @@ const VALUE_PROPS = [
   },
   {
     title: 'Precios B2C y mayoristas',
-    text: 'Precio al público y tarifas por volumen para compras B2B, con descuentos por cantidad.',
+    text: 'Precio al público y tarifas por volumen para compras B2B, con descuentos.',
   },
   {
     title: 'Cotización directa',
     text: 'Solicitá una cotización de cualquier producto en un clic, sin formularios largos.',
+  },
+  {
+    title: 'Envíos a todo el país',
+    text: 'Coordinación logística rápida y segura hasta tu obra o taller.',
   },
 ]
 
@@ -25,23 +29,23 @@ function Home() {
       <SearchHeader redirectSearchTo="/productos" />
 
       <section className="home-hero">
-        <h1>Maquinaria pesada y repuestos, al instante</h1>
-        <p>Buscá entre cientos de equipos y repuestos con disponibilidad y precio en tiempo real.</p>
+        <h1>Encontrá la maquinaria y repuestos que tu proyecto necesita</h1>
+        <p>Stock actualizado en tiempo real, precios transparentes y cotización en un clic.</p>
       </section>
 
       <CategoryShowcase />
 
-      <section className="home-value-props">
-        <div className="value-props">
-          {VALUE_PROPS.map((prop) => (
-            <div key={prop.title} className="value-prop">
-              <h3>{prop.title}</h3>
-              <p>{prop.text}</p>
+          <section className="home-value-props">
+            <div className="value-props">
+              {VALUE_PROPS.map((prop) => (
+                <div key={prop.title} className="value-prop">
+                  <h3>{prop.title}</h3>
+                  <p>{prop.text}</p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </section>
-
+          </section>
+          
       <Footer />
     </InstantSearch>
   )
