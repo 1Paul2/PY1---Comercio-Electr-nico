@@ -7,12 +7,18 @@ import Catalog from '../features/catalog/Catalog'
 function Productos() {
   const [searchParams] = useSearchParams()
   const initialQuery = searchParams.get('q') || ''
+  const initialCategory = searchParams.get('categoria')
 
   return (
     <InstantSearch
       searchClient={searchClient}
       indexName="grupo-07_products"
-      initialUiState={{ 'grupo-07_products': { query: initialQuery } }}
+      initialUiState={{
+        'grupo-07_products': {
+          query: initialQuery,
+          ...(initialCategory ? { refinementList: { category_facet: [initialCategory] } } : {}),
+        },
+      }}
     >
       <SearchHeader />
       <Catalog />
