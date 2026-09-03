@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { SearchBox } from 'react-instantsearch'
 import ThemeToggle from '../../components/ThemeToggle'
+import '../../styles/SearchHeader.css'
 
 function SearchHeader({ redirectSearchTo }) {
   const navigate = useNavigate()

@@ -3,6 +3,7 @@ import { Hits, Stats } from 'react-instantsearch'
 import Filters from './Filters'
 import ProductCard from './ProductCard'
 import Pagination from './Pagination'
+import '../../styles/Catalog.css'
 
 function Catalog() {
   const [filtersOpen, setFiltersOpen] = useState(true)

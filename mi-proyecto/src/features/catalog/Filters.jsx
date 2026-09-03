@@ -1,4 +1,5 @@
 import { RefinementList, RangeInput, ClearRefinements } from 'react-instantsearch'
+import '../../styles/Filters.css'
 
 function Filters({ isOpen, onToggle }) {
   return (

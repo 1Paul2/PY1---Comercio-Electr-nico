@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { searchClient } from './searchClient'
 import { formatCRCParts, formatPercent } from './format'
+import '../../styles/ProductDetail.css'
 
 const INDEX_NAME = 'grupo-07_products'
 const QUOTE_EMAIL = 'ventas@maquinariacr.com'
