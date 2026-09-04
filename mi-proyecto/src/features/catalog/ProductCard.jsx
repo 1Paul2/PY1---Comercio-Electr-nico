@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { formatCRC } from './format'
+import '../../styles/ProductCard.css'
 
 function ProductCard({ hit }) {
   const price = hit?.pricing?.b2c?.price_crc

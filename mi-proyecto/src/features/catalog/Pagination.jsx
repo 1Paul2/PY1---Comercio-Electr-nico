@@ -1,4 +1,5 @@
 import { Pagination as AlgoliaPagination } from 'react-instantsearch'
+import '../../styles/Pagination.css'
 
 function Pagination() {
   return (

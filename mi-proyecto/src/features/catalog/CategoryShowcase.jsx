@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { searchClient } from './searchClient'
 import { formatCRC } from './format'
+import '../../styles/CategoryShowcase.css'
 
 const INDEX_NAME = 'grupo-07_products'
 const BLOCK_CATEGORY_LIMIT = 12 

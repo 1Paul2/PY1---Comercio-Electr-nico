@@ -3,6 +3,7 @@ import { searchClient } from '../features/catalog/searchClient'
 import SearchHeader from '../features/catalog/SearchHeader'
 import CategoryShowcase from '../features/catalog/CategoryShowcase'
 import Footer from '../components/Footer'
+import '../styles/Home.css'
 
 const VALUE_PROPS = [
   {
