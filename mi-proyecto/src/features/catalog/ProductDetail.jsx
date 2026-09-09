@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { searchClient } from './searchClient'
 import { formatCRCParts, formatPercent } from './format'
+import RelatedProducts from './RelatedProducts'
 import '../../styles/ProductDetail.css'
 
 const INDEX_NAME = 'grupo-07_products'
@@ -127,6 +128,7 @@ function ProductDetail({ id }) {
     locations = [],
     objectID,
     category_facet,
+    brand_facet,
   } = product
 
   const totalStock = locations.reduce((sum, loc) => sum + (loc.stock_quantity || 0), 0)
@@ -136,7 +138,25 @@ function ProductDetail({ id }) {
   const minQuantity = activeTab === 'b2b' ? pricing.b2b?.min_order_quantity || 1 : 1
   const isOutOfStock = activeTab === 'b2c' && pricing.b2c?.in_stock === false
 
-  const activePrice = formatCRCParts(activeTab === 'b2b' ? pricing.b2b?.price_crc : pricing.b2c?.price_crc)
+  const rawUnitPrice = activeTab === 'b2b' ? pricing.b2b?.price_crc : pricing.b2c?.price_crc
+
+  const bestDiscount =
+    activeTab === 'b2b'
+      ? (pricing.b2b?.volume_discounts || [])
+          .filter((discount) => quantity >= discount.min_units)
+          .reduce((best, discount) => (!best || discount.min_units > best.min_units ? discount : best), null)
+      : null
+
+  const discountedUnitPrice =
+    typeof rawUnitPrice === 'number' && bestDiscount
+      ? rawUnitPrice * (1 - bestDiscount.discount_pct)
+      : rawUnitPrice
+
+  const totalPrice = typeof discountedUnitPrice === 'number' ? discountedUnitPrice * quantity : null
+
+  const activePrice = formatCRCParts(totalPrice)
+  const unitPriceParts = formatCRCParts(discountedUnitPrice)
+  const originalUnitPriceParts = bestDiscount ? formatCRCParts(rawUnitPrice) : null
 
   function handleTabChange(tab) {
     setPriceTab(tab)
@@ -255,6 +275,24 @@ function ProductDetail({ id }) {
             )}
           </p>
 
+          {quantity > 1 && unitPriceParts && (
+            <p className="pricing-card__unit-price">
+              {originalUnitPriceParts && (
+                <span className="pricing-card__unit-price-original">
+                  {originalUnitPriceParts.symbol}
+                  {originalUnitPriceParts.amount}
+                </span>
+              )}
+              {unitPriceParts.symbol}
+              {unitPriceParts.amount} c/u
+              {bestDiscount && (
+                <span className="pricing-card__discount-badge">
+                  −{formatPercent(bestDiscount.discount_pct)}
+                </span>
+              )}
+            </p>
+          )}
+
           {activeTab === 'b2c' ? (
             <span className={`stock-badge ${pricing.b2c?.in_stock ? 'stock-badge--in' : 'stock-badge--out'}`}>
               {pricing.b2c?.in_stock ? 'Disponible' : 'Agotado'}
@@ -340,44 +378,50 @@ function ProductDetail({ id }) {
         )}
       </div>
 
-      {locations.length > 0 && (
-        <section className="product-detail__section">
-          <h2>Disponibilidad por sede</h2>
-          <dl className="spec-table">
-            {locations.map((location) => (
-              <div key={location.site} className="spec-table__row">
-                <dt>📍 {location.site}</dt>
-                <dd className={`stock-quantity stock-quantity--${location.stock_quantity > 2 ? 'high' : 'low'}`}>
-                  {location.stock_quantity} unid.
-                </dd>
-              </div>
-            ))}
-            <div className="spec-table__row spec-table__row--total">
-              <dt>Total</dt>
-              <dd>{totalStock} unid.</dd>
-            </div>
-          </dl>
-        </section>
-      )}
-
       <section className="product-detail__section">
         <h2>Descripción</h2>
         <p className="product-detail__description">{description}</p>
       </section>
 
-      {Object.keys(facets).length > 0 && (
-        <section className="product-detail__section">
-          <h2>Ficha técnica</h2>
-          <dl className="spec-table spec-table--specs">
-            {Object.entries(facets).map(([key, value]) => (
-              <div key={key} className="spec-table__row">
-                <dt>{FACET_LABELS[key] || key}</dt>
-                <dd>{formatFacetValue(value)}</dd>
+      <div className="product-detail__panels">
+        {locations.length > 0 && (
+          <section className="product-detail__section">
+            <h2>Disponibilidad por sede</h2>
+            <dl className="spec-table">
+              {locations.map((location) => (
+                <div key={location.site} className="spec-table__row">
+                  <dt>📍 {location.site}</dt>
+                  <dd className={`stock-quantity stock-quantity--${location.stock_quantity > 2 ? 'high' : 'low'}`}>
+                    {location.stock_quantity} unid.
+                  </dd>
+                </div>
+              ))}
+              <div className="spec-table__row spec-table__row--total">
+                <dt>Total</dt>
+                <dd>{totalStock} unid.</dd>
               </div>
-            ))}
-          </dl>
-        </section>
-      )}
+            </dl>
+          </section>
+        )}
+
+        {Object.keys(facets).length > 0 && (
+          <section className="product-detail__section">
+            <h2>Ficha técnica</h2>
+            <dl className="spec-table spec-table--specs">
+              {Object.entries(facets).map(([key, value]) => (
+                <div key={key} className="spec-table__row">
+                  <dt>{FACET_LABELS[key] || key}</dt>
+                  <dd>{formatFacetValue(value)}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
+      </div>
+
+      <div className="product-detail__related">
+        <RelatedProducts categoryFacet={category_facet} brandFacet={brand_facet} excludeId={objectID} />
+      </div>
     </article>
   )
 }
