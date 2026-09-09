@@ -11,7 +11,12 @@ function Filters({ isOpen, onToggle }) {
         aria-label={isOpen ? 'Ocultar filtros' : 'Mostrar filtros'}
         title={isOpen ? 'Ocultar filtros' : 'Mostrar filtros'}
       >
-        {isOpen ? '‹' : '›'}
+        <span className="filters-toggle__icon" aria-hidden="true">
+          {isOpen ? '‹' : '›'}
+        </span>
+        <span className="filters-toggle__label">
+          {isOpen ? 'Ocultar filtros' : 'Mostrar filtros'}
+        </span>
       </button>
 
       <aside className="catalog-filters">
@@ -25,6 +30,11 @@ function Filters({ isOpen, onToggle }) {
           <RefinementList
             attribute="category_facet"
             searchable={false}
+            translations={{
+              showMoreButtonText({ isShowingMore }) {
+                return isShowingMore ? 'Ver menos' : 'Ver más'
+              },
+            }}
             showMore={true}
             showMoreLimit={20}
           />
@@ -35,7 +45,12 @@ function Filters({ isOpen, onToggle }) {
           <RefinementList
             attribute="brand_facet"
             searchable={true}
-            translations={{ placeholderText: 'Buscar marca...' }}
+            translations={{
+              placeholderText: 'Buscar marca...',
+              showMoreButtonText({ isShowingMore }) {
+                return isShowingMore ? 'Ver menos' : 'Ver más'
+              },
+            }}
             showMore={true}
             showMoreLimit={20}
           />

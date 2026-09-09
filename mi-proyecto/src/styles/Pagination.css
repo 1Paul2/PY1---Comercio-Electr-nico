@@ -49,3 +49,24 @@
   opacity: 0.4;
   pointer-events: none;
 }
+
+/* Con padding={2} el widget muestra hasta 9 controles:
+   9 x 38px + 8 x 6.4px de gap = 393px contra 343px disponibles a 375px.
+   Como la lista tiene flex-wrap, no desbordaba: caía en dos filas. */
+@media (max-width: 480px) {
+  .catalog-pagination {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .ais-Pagination-list {
+    gap: 0.25rem;
+  }
+
+  .ais-Pagination-link {
+    min-width: 32px;
+    height: 36px;
+    padding: 0 6px;
+    font-size: 0.85rem;
+  }
+}

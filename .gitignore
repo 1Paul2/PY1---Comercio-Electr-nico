@@ -1,0 +1,11 @@
+# Credenciales: el .gitignore de mi-proyecto/ solo cubre su propia carpeta
+# y solo el patrón `.env`. Un archivo `env` (sin punto) en la raíz quedaba
+# sin proteger, a un `git add .` de publicar la ALGOLIA_ADMIN_KEY.
+.env
+.env.*
+env
+env.*
+*.env
+
+node_modules
+dist
