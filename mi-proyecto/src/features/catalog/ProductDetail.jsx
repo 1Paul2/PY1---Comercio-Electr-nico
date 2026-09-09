@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { searchClient } from './searchClient'
 import { formatCRCParts, formatPercent } from './format'
 import RelatedProducts from './RelatedProducts'
@@ -96,6 +96,7 @@ function useProduct(id) {
 
 function ProductDetail({ id }) {
   const { status, product } = useProduct(id)
+  const navigate = useNavigate()
   const [priceTab, setPriceTab] = useState('b2c')
   const [quantity, setQuantity] = useState(1)
 
@@ -182,6 +183,14 @@ function ProductDetail({ id }) {
 
   return (
     <article className="product-detail">
+      <button
+        type="button"
+        className="product-detail__back"
+        onClick={() => navigate(-1)}
+      >
+        <span aria-hidden="true">←</span> Volver
+      </button>
+
       <nav className="product-detail__breadcrumb" aria-label="Ruta de navegación">
         <Link to="/productos">Catálogo</Link>
         {categories.map((category, index) => (
