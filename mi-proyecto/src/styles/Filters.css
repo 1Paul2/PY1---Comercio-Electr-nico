@@ -59,6 +59,11 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
+/* En escritorio el boton es un chevron de 28px: la etiqueta sobra. */
+.filters-toggle__label {
+  display: none;
+}
+
 .filters-toggle:hover {
   opacity: 1;
   transform: scale(1.05);
@@ -340,9 +345,43 @@
     display: none;
   }
 
+  /* El toggle era el UNICO control del panel y estaba oculto justo en
+     movil, donde el sidebar se apila sobre la grilla: el panel quedaba
+     abierto de forma permanente y sin manera de cerrarlo. */
   .filters-toggle,
   .catalog-filters-wrap.is-collapsed .filters-toggle {
+    display: flex;
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+    min-height: 44px;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--brand-ink);
+    background: var(--brand);
+    color: var(--brand-ink);
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 1;
+    gap: 0.4rem;
+    box-shadow: none;
+  }
+
+  .filters-toggle__icon {
     display: none;
+  }
+
+  .filters-toggle__label {
+    display: inline;
+  }
+
+  /* El scale(1.05) saca ~9px por lado en un boton full-width, y en tactil
+     el hover queda pegado despues del tap. */
+  .filters-toggle:hover,
+  .catalog-filters-wrap.is-collapsed .filters-toggle:hover {
+    transform: none;
   }
 }
 
