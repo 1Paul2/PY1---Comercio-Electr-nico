@@ -1,0 +1,90 @@
+/* Carrusel horizontal de "Productos relacionados" en la vista de detalle
+   (misma categoría y/o marca que el producto actual). Sin auto-rotación:
+   navegación manual con flechas + scroll táctil/rueda. */
+
+.related-products__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.related-products__header h2 {
+  margin: 0;
+  color: var(--text-h);
+  font-size: 1.1rem;
+}
+
+.related-products__nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.related-products__nav button {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--text-h);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.related-products__nav button:hover:not(:disabled) {
+  background: var(--code-bg);
+  border-color: var(--accent);
+}
+
+.related-products__nav button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.related-products__track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding: 6px 2px 0.75rem;
+  margin: 0 -2px;
+  scrollbar-width: thin;
+}
+
+.related-products__track::-webkit-scrollbar {
+  height: 8px;
+}
+
+.related-products__track::-webkit-scrollbar-track {
+  background: var(--code-bg);
+  border-radius: 999px;
+}
+
+.related-products__track::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+.related-products__item {
+  flex: 0 0 auto;
+  width: 220px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 480px) {
+  .related-products__item {
+    width: 168px;
+  }
+
+  .related-products__header h2 {
+    font-size: 1rem;
+  }
+}
