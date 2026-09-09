@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Hits, Stats, useInstantSearch } from 'react-instantsearch'
+import { Hits, useInstantSearch } from 'react-instantsearch'
 import Filters from './Filters'
 import ProductCard from './ProductCard'
 import Pagination from './Pagination'
@@ -21,15 +21,6 @@ function Catalog() {
 
   return (
     <div className="catalog">
-      <Stats
-        classNames={{ root: 'catalog-stats' }}
-        translations={{
-          rootElementText({ nbHits }) {
-            return `${nbHits.toLocaleString()} productos encontrados`
-          },
-        }}
-      />
-
       <div className="catalog__body">
         <Filters isOpen={filtersOpen} onToggle={() => setFiltersOpen((o) => !o)} />
 
