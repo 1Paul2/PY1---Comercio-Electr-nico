@@ -19,18 +19,16 @@ function Footer() {
           <ul className="site-footer__links">
             <li><Link to="/">› Inicio</Link></li>
             <li><Link to="/productos">› Productos</Link></li>
-            <li><Link to="/nosotros">› Nosotros</Link></li>
-            <li><Link to="/contacto">› Contacto</Link></li>
           </ul>
         </div>
 
         <div className="site-footer__col">
           <h3 className="site-footer__title">Categorías</h3>
           <ul className="site-footer__links">
-            <li><Link to="/productos?cat=excavadora">Excavadoras</Link></li>
-            <li><Link to="/productos?cat=bulldozer">Bulldozer</Link></li>
-            <li><Link to="/productos?cat=cargador">Cargador de Ruedas</Link></li>
-            <li><Link to="/productos?cat=mezcladora">Mezcladora de Concreto</Link></li>
+            <li><Link to="/productos?categoria=Excavadora">Excavadoras</Link></li>
+            <li><Link to="/productos?categoria=Bulldozer">Bulldozer</Link></li>
+            <li><Link to="/productos?categoria=Cargador%20de%20Ruedas">Cargador de Ruedas</Link></li>
+            <li><Link to="/productos?categoria=Mezcladora%20de%20Concreto">Mezcladora de Concreto</Link></li>
           </ul>
         </div>
 
@@ -49,10 +47,6 @@ function Footer() {
       <div className="site-footer__bottom">
         <div className="site-footer__bottom-container">
           <p>&copy; {new Date().getFullYear()} Maquinaria CR. Todos los derechos reservados.</p>
-          <div className="site-footer__legal">
-            <Link to="/privacidad">Política de Privacidad</Link>
-            <Link to="/terminos">Términos del Servicio</Link>
-          </div>
         </div>
       </div>
     </footer>
