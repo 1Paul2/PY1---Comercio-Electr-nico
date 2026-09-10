@@ -138,6 +138,8 @@ function ProductDetail({ id }) {
   const activeTab = hasB2B ? priceTab : 'b2c'
   const minQuantity = activeTab === 'b2b' ? pricing.b2b?.min_order_quantity || 1 : 1
   const isOutOfStock = activeTab === 'b2c' && pricing.b2c?.in_stock === false
+  const maxQuantity = totalStock > 0 ? totalStock : minQuantity
+  const isAtMaxStock = quantity >= maxQuantity
 
   const rawUnitPrice = activeTab === 'b2b' ? pricing.b2b?.price_crc : pricing.b2c?.price_crc
 
@@ -161,7 +163,8 @@ function ProductDetail({ id }) {
 
   function handleTabChange(tab) {
     setPriceTab(tab)
-    setQuantity(tab === 'b2b' ? pricing.b2b?.min_order_quantity || 1 : 1)
+    const nextMin = tab === 'b2b' ? pricing.b2b?.min_order_quantity || 1 : 1
+    setQuantity(totalStock > 0 ? Math.min(nextMin, totalStock) : nextMin)
   }
 
   const quoteHref = (() => {
@@ -344,7 +347,12 @@ function ProductDetail({ id }) {
                 −
               </button>
               <span className="quantity-selector__value">{quantity}</span>
-              <button type="button" onClick={() => setQuantity((q) => q + 1)} aria-label="Aumentar cantidad">
+              <button
+                type="button"
+                onClick={() => setQuantity((q) => Math.min(maxQuantity, q + 1))}
+                disabled={isAtMaxStock}
+                aria-label="Aumentar cantidad"
+              >
                 +
               </button>
             </div>

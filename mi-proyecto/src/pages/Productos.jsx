@@ -3,6 +3,7 @@ import { InstantSearch } from 'react-instantsearch'
 import { searchClient } from '../features/catalog/searchClient'
 import SearchHeader from '../features/catalog/SearchHeader'
 import Catalog from '../features/catalog/Catalog'
+import Footer from '../components/Footer'
 
 function Productos() {
   const [searchParams] = useSearchParams()
@@ -22,6 +23,7 @@ function Productos() {
     >
       <SearchHeader />
       <Catalog />
+      <Footer />
     </InstantSearch>
   )
 }
