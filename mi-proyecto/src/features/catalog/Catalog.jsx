@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { Hits, Stats } from 'react-instantsearch'
+import { Hits, useInstantSearch } from 'react-instantsearch'
 import Filters from './Filters'
 import ProductCard from './ProductCard'
 import Pagination from './Pagination'
+import EmptyState from './EmptyState'
 import '../../styles/Catalog.css'
 
 /* En escritorio el sidebar no compite por espacio: los filtros se ven.
@@ -15,23 +16,23 @@ const filtrosAbiertosPorDefecto = () =>
 
 function Catalog() {
   const [filtersOpen, setFiltersOpen] = useState(filtrosAbiertosPorDefecto)
+  const { results } = useInstantSearch()
+  const hasHits = Boolean(results?.nbHits)
 
   return (
     <div className="catalog">
-      <Stats
-        translations={{
-          rootElementText({ nbHits }) {
-            return `${nbHits.toLocaleString()} productos encontrados`
-          },
-        }}
-      />
-
       <div className="catalog__body">
         <Filters isOpen={filtersOpen} onToggle={() => setFiltersOpen((o) => !o)} />
 
         <div className="catalog__results">
-          <Hits hitComponent={ProductCard} classNames={{ list: 'catalog__grid' }} />
-          <Pagination />
+          {hasHits ? (
+            <>
+              <Hits hitComponent={ProductCard} classNames={{ list: 'catalog__grid' }} />
+              <Pagination />
+            </>
+          ) : (
+            <EmptyState />
+          )}
         </div>
       </div>
     </div>

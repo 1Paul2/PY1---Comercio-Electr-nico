@@ -1,6 +1,6 @@
 .theme-toggle {
-  background: rgba(8, 6, 13, 0.08);
-  border: 2px solid rgba(8, 6, 13, 0.15);
+  background: #08060d;
+  border: 2px solid rgba(255, 255, 255, 0.35);
   padding: 0;
   cursor: pointer;
   width: 40px;
@@ -8,12 +8,19 @@
   perspective: 200px;
   flex-shrink: 0;
   border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease;
 }
 
 .theme-toggle:hover {
-  background: rgba(8, 6, 13, 0.15);
-  transform: scale(1.05);
+  background: #1a1622;
+  border-color: rgba(255, 255, 255, 0.55);
+  transform: scale(1.08);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid #08060d;
+  outline-offset: 2px;
 }
 
 .theme-toggle__inner {

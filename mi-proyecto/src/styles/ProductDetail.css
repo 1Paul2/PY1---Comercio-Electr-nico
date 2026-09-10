@@ -1,6 +1,26 @@
 /* Vista de detalle de producto: layout tipo ficha de e-commerce
    (galería / info / buy-box), ficha técnica y disponibilidad por sede. */
 
+.product-detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--brand-strong);
+  border-radius: 4px;
+  background: var(--brand);
+  color: var(--brand-ink);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product-detail__back:hover {
+  background: var(--brand-strong);
+}
+
 .product-detail__message {
   max-width: 32rem;
   margin: 3rem auto;
