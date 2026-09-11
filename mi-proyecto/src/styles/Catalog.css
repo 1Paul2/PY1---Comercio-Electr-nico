@@ -2,7 +2,6 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 1.5rem 2rem;
-  flex: 1;
   width: 100%;
 }
 
@@ -76,25 +75,21 @@
   background: var(--brand-strong);
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1024px) {
   .catalog {
     padding: 1.5rem;
   }
-}
 
-@media (max-width: 1200px) {
   .catalog__grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .catalog__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
 
-@media (max-width: 768px) {
   .catalog__body {
     flex-direction: column;
   }
@@ -106,7 +101,7 @@
 
 @media (max-width: 480px) {
   .catalog__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
     gap: 0.75rem;
   }
 }

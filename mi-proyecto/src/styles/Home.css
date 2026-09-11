@@ -97,25 +97,12 @@
 
 @media (max-width: 1024px) {
   .value-props {
-    gap: 1.75rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
   }
 
   .value-prop {
     padding: 2rem 1.5rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .value-props {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 860px) {
-  .value-props {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
   }
 }
 
