@@ -1,0 +1,43 @@
+.aa-Panel {
+  max-width: 480px;
+}
+
+.aa-Item {
+  padding: 0;
+}
+
+.aa-ProductItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.aa-ProductItem-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.aa-ProductItem-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.aa-ProductItem-brand {
+  font-size: 11px;
+  color: #888;
+}
+
+.aa-ProductItem-title {
+  font-size: 14px;
+  color: #111;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
