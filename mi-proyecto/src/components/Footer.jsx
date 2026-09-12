@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom'
 import '../styles/Footer.css'
 
+/**
+ * Nombre: Footer
+ * Descripción: Renderiza el pie de página del sitio con la marca, navegación,
+ * categorías y datos de contacto.
+ * Entradas: No recibe parámetros.
+ * Salidas: JSX con el footer visible en la aplicación.
+ * Excepciones: No hay.
+ */
 function Footer() {
   return (
     <footer className="site-footer">
@@ -31,7 +39,6 @@ function Footer() {
             <li><Link to="/productos?categoria=Mezcladora%20de%20Concreto">Mezcladora de Concreto</Link></li>
           </ul>
         </div>
-
 
         <div className="site-footer__col">
           <h3 className="site-footer__title">Contacto</h3>

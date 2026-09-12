@@ -2,6 +2,13 @@ import { createContext, useContext, useEffect, useState } from 'react'
 
 const ThemeContext = createContext(null)
 
+/**
+ * Nombre: ThemeProvider
+ * Descripción: Proporciona el tema actual de la aplicación y expone la función para cambiarlo.
+ * Entradas: children: contenido que quedará envuelto dentro del proveedor.
+ * Salidas: JSX con el contexto de tema disponible para los componentes hijos.
+ * Excepciones: No hay.
+ */
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('theme')
@@ -23,6 +30,13 @@ export function ThemeProvider({ children }) {
   )
 }
 
+/**
+ * Nombre: useTheme
+ * Descripción: Accede al contexto del tema activo para leerlo o cambiarlo.
+ * Entradas: No recibe parámetros.
+ * Salidas: Objeto con el tema actual y la función toggleTheme.
+ * Excepciones: No hay.
+ */
 export function useTheme() {
   return useContext(ThemeContext)
 }

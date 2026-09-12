@@ -2,6 +2,13 @@ import { Link } from 'react-router-dom'
 import { formatCRC } from './format'
 import '../../styles/ProductCard.css'
 
+/**
+ * Nombre: ProductCard
+ * Descripción: Renderiza la tarjeta del producto con imagen, precio y estado de disponibilidad.
+ * Entradas: hit: objeto con la información del producto.
+ * Salidas: JSX con la tarjeta navegable hacia el detalle del producto.
+ * Excepciones: No hay.
+ */
 function ProductCard({ hit }) {
   const price = hit?.pricing?.b2c?.price_crc
   const inStock = hit?.pricing?.b2c?.in_stock
