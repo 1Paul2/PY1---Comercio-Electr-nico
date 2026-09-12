@@ -6,13 +6,7 @@ import { recentSearchesPlugin } from './recentSearchesPlugin'
 import { createProductSuggestionsSource } from './productSuggestionsSource'
 import '../../styles/SearchAutocomplete.css'
 
-/**
- * Nombre: SearchAutocomplete
- * Descripción: Inicializa el buscador con autocompletado y sugerencias de productos.
- * Entradas: redirectSearchTo: ruta de redirección opcional; onQuery: callback para manejar la búsqueda.
- * Salidas: JSX con el contenedor del autocompletado.
- * Excepciones: No hay.
- */
+
 function SearchAutocomplete({ redirectSearchTo, onQuery }) {
   const containerRef = useRef(null)
   const navigate = useNavigate()

@@ -4,13 +4,6 @@ import ThemeToggle from '../../components/ThemeToggle'
 import SearchAutocomplete from './SearchAutocomplete'
 import '../../styles/SearchHeader.css'
 
-/**
- * Nombre: SearchHeader
- * Descripción: Renderiza el encabezado con navegación, buscador y selector de tema.
- * Entradas: redirectSearchTo: ruta destino para la búsqueda.
- * Salidas: JSX con el encabezado principal de la vista de catálogo.
- * Excepciones: No hay.
- */
 function SearchHeader({ redirectSearchTo }) {
   const navigate = useNavigate()
   const { refine } = useSearchBox()

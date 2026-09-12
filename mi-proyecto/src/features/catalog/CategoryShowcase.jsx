@@ -10,13 +10,6 @@ const BLOCK_ITEMS = 4
 const COLUMNS_PER_ROW = 4
 const ROTATE_INTERVAL_MS = 5000
 
-/**
- * Nombre: chunk
- * Descripción: Divide un arreglo en bloques de tamaño fijo para formar filas de categorías.
- * Entradas: array: arreglo a dividir; size: tamaño de cada bloque.
- * Salidas: Arreglo bidimensional con los grupos formados.
- * Excepciones: No hay.
- */
 function chunk(array, size) {
   const result = []
   for (let i = 0; i < array.length; i += size) {
@@ -25,13 +18,6 @@ function chunk(array, size) {
   return result
 }
 
-/**
- * Nombre: useCategoryShowcase
- * Descripción: Carga las categorías principales y sus productos destacados para mostrarlos en el showcase.
- * Entradas: No recibe parámetros.
- * Salidas: Estado con loading, ready, empty o error y los bloques de categorías.
- * Excepciones: No hay.
- */
 function useCategoryShowcase() {
   const [state, setState] = useState({ status: 'loading', blocks: [] })
 
@@ -89,13 +75,6 @@ function useCategoryShowcase() {
   return state
 }
 
-/**
- * Nombre: BlockColumn
- * Descripción: Muestra una columna con una categoría y su producto destacado rotando automáticamente.
- * Entradas: category: objeto con nombre, conteo y productos de la categoría.
- * Salidas: JSX con la columna visual de la categoría.
- * Excepciones: No hay.
- */
 function BlockColumn({ category }) {
   const hits = category.hits
   const [activeIndex, setActiveIndex] = useState(0)
@@ -161,13 +140,6 @@ function BlockColumn({ category }) {
   )
 }
 
-/**
- * Nombre: CategoryShowcase
- * Descripción: Renderiza el bloque visual de categorías principales con productos destacados.
- * Entradas: No recibe parámetros.
- * Salidas: JSX con la sección de categorías del inicio.
- * Excepciones: No hay.
- */
 function CategoryShowcase() {
   const { status, blocks } = useCategoryShowcase()
 

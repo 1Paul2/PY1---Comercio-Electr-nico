@@ -2,13 +2,6 @@ import { getAlgoliaResults } from '@algolia/autocomplete-preset-algolia'
 import { searchClient } from './searchClient'
 import { recentSearchesPlugin } from './recentSearchesPlugin'
 
-/**
- * Nombre: createProductSuggestionsSource
- * Descripción: Genera la fuente de sugerencias para el buscador con resultados de productos.
- * Entradas: onSelect: función ejecutada al seleccionar un producto sugerido.
- * Salidas: Objeto con la configuración del origen de sugerencias.
- * Excepciones: No hay.
- */
 export function createProductSuggestionsSource({ onSelect }) {
   return {
     sourceId: 'products',

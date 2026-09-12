@@ -1,12 +1,5 @@
 import { Link } from 'react-router-dom'
 
-/**
- * Nombre: Header
- * Descripción: Renderiza el encabezado principal con la marca y los enlaces de navegación.
- * Entradas: No recibe parámetros.
- * Salidas: JSX con el menú superior del sitio.
- * Excepciones: No hay.
- */
 function Header() {
   return (
     <header className="site-header">

@@ -1,13 +1,6 @@
 import { useClearRefinements, useInstantSearch } from 'react-instantsearch'
 import '../../styles/Catalog.css'
 
-/**
- * Nombre: EmptyState
- * Descripción: Muestra un mensaje cuando no existen productos con los filtros activos.
- * Entradas: No recibe parámetros.
- * Salidas: JSX con el estado visual vacío y la opción de limpiar filtros.
- * Excepciones: No hay.
- */
 function EmptyState() {
   const { indexUiState } = useInstantSearch()
   const { refine, canRefine } = useClearRefinements()
