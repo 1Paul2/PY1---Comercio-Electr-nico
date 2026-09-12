@@ -1,11 +1,14 @@
+/* .aa-Panel — Panel de resultados de autocomplete (Algolia). */
 .aa-Panel {
   max-width: 480px;
 }
 
+/* .aa-Item — Ítem del panel sin padding por defecto. */
 .aa-Item {
   padding: 0;
 }
 
+/* .aa-ProductItem — Fila del producto en el autocomplete. */
 .aa-ProductItem {
   display: flex;
   align-items: center;
@@ -15,6 +18,7 @@
   width: 100%;
 }
 
+/* Miniatura del producto en el autocomplete. */
 .aa-ProductItem-image {
   width: 40px;
   height: 40px;
@@ -23,17 +27,20 @@
   flex-shrink: 0;
 }
 
+/* Columna de texto: marca y título. */
 .aa-ProductItem-content {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
+/* Marca del producto (texto pequeño y gris). */
 .aa-ProductItem-brand {
   font-size: 11px;
   color: #888;
 }
 
+/* Título del producto, recortado con elipsis si es largo. */
 .aa-ProductItem-title {
   font-size: 14px;
   color: #111;

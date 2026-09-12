@@ -1,3 +1,4 @@
+/* .catalog — Contenedor principal del catálogo, con ancho máximo y centrado. */
 .catalog {
   max-width: 1440px;
   margin: 0 auto;
@@ -5,6 +6,7 @@
   width: 100%;
 }
 
+/* .catalog__body — Fila que coloca sidebar y resultados uno al lado del otro. */
 .catalog__body {
   display: flex;
   gap: 1.5rem;
@@ -13,12 +15,14 @@
   width: 100%;
 }
 
+/* .catalog__results — Columna de resultados; ocupa el espacio restante. */
 .catalog__results {
   flex: 1;
   min-width: 0;
   width: 100%;
 }
 
+/* .catalog__grid — Grid de 4 columnas para las tarjetas de producto. */
 .catalog__grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -28,6 +32,7 @@
   margin: 0;
 }
 
+/* .catalog-empty — Estado vacío: caja centrada con borde punteado y fondo suave. */
 .catalog-empty {
   display: flex;
   flex-direction: column;
@@ -41,17 +46,20 @@
   background: var(--accent-bg);
 }
 
+/* Icono del estado vacío, atenuado. */
 .catalog-empty__icon {
   color: var(--text);
   opacity: 0.6;
 }
 
+/* Título del estado vacío. */
 .catalog-empty__title {
   margin: 0.25rem 0 0;
   color: var(--text-h);
   font-size: 1.15rem;
 }
 
+/* Texto descriptivo del estado vacío. */
 .catalog-empty__text {
   margin: 0;
   max-width: 32rem;
@@ -59,6 +67,7 @@
   font-size: 0.95rem;
 }
 
+/* Botón de acción del estado vacío. */
 .catalog-empty__button {
   margin-top: 0.5rem;
   padding: 0.55rem 1.25rem;
@@ -71,10 +80,12 @@
   transition: all 0.2s;
 }
 
+/* Hover del botón: usa el color de marca más fuerte. */
 .catalog-empty__button:hover {
   background: var(--brand-strong);
 }
 
+/* Responsive ≤1024px: menos padding y grid de 3 columnas. */
 @media (max-width: 1024px) {
   .catalog {
     padding: 1.5rem;
@@ -85,6 +96,7 @@
   }
 }
 
+/* Responsive ≤768px: grid de 2 columnas y body en columna. */
 @media (max-width: 768px) {
   .catalog__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -99,6 +111,7 @@
   }
 }
 
+/* Responsive ≤480px: 1 columna y menos separación. */
 @media (max-width: 480px) {
   .catalog__grid {
     grid-template-columns: minmax(0, 1fr);

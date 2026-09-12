@@ -1,3 +1,7 @@
+/* Productos.jsx — Página de catálogo: lee ?q y ?categoria de la URL
+   y los usa como estado inicial de InstantSearch. */
+
+/* Imports: hook de query params, InstantSearch, cliente, header, catálogo y footer. */
 import { useSearchParams } from 'react-router-dom'
 import { InstantSearch } from 'react-instantsearch'
 import { searchClient } from '../features/catalog/searchClient'
@@ -5,11 +9,13 @@ import SearchHeader from '../features/catalog/SearchHeader'
 import Catalog from '../features/catalog/Catalog'
 import Footer from '../components/Footer'
 
+/* Componente Productos: inicializa la búsqueda con los params de la URL. */
 function Productos() {
   const [searchParams] = useSearchParams()
   const initialQuery = searchParams.get('q') || ''
   const initialCategory = searchParams.get('categoria')
 
+  /* Estado inicial: texto de búsqueda y filtro por categoría si viene en la URL. */
   return (
     <InstantSearch
       searchClient={searchClient}
@@ -21,8 +27,13 @@ function Productos() {
         },
       }}
     >
+      {/* Header con buscador. */}
       <SearchHeader />
+
+      {/* Catálogo con grilla, filtros y paginación. */}
       <Catalog />
+
+      {/* Footer del sitio. */}
       <Footer />
     </InstantSearch>
   )
