@@ -1,5 +1,6 @@
 /* Bloques de categoría con foto rotativa, en la página de inicio. */
 
+/* .category-showcase — Contenedor general centrado con ancho máximo. */
 .category-showcase {
   max-width: 1500px;
   width: 95%;
@@ -23,18 +24,21 @@
   }
 }
 
+/* .category-blocks — Sección que agrupa filas de bloques de categoría. */
 .category-blocks {
   max-width: 1500px;
   margin: 0 auto 3rem;
   padding: 1rem;
 }
 
+/* Título de la sección de bloques, centrado. */
 .category-blocks > h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   color: var(--text-h);
 }
 
+/* .category-blocks__row — Fila en grid de 4 columnas para los bloques. */
 .category-blocks__row {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -42,16 +46,19 @@
   margin-bottom: 1.5rem;
 }
 
+/* La última fila no lleva margen inferior. */
 .category-blocks__row:last-child {
   margin-bottom: 0;
 }
 
+/* Mensaje de la sección cuando no hay datos. */
 .category-showcase__message {
   text-align: center;
   padding: 2rem;
   opacity: 0.7;
 }
 
+/* .showcase-column — Columna individual con borde y padding. */
 .showcase-column {
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -59,6 +66,7 @@
   min-width: 0;
 }
 
+/* Cabecera de la columna: título y enlace alineados. */
 .showcase-column__header {
   display: flex;
   align-items: baseline;
@@ -67,6 +75,7 @@
   margin-bottom: 0.75rem;
 }
 
+/* Título de la columna, con recorte por elipsis si es muy largo. */
 .showcase-column__header h3 {
   margin: 0;
   font-size: 1rem;
@@ -77,6 +86,7 @@
   white-space: nowrap;
 }
 
+/* Enlace "ver más" de la cabecera. */
 .showcase-column__header a {
   color: var(--accent);
   text-decoration: none;
@@ -84,6 +94,7 @@
   flex-shrink: 0;
 }
 
+/* .showcase-rotator — Enlace contenedor del rotador de imágenes. */
 .showcase-rotator {
   display: flex;
   flex-direction: column;
@@ -91,6 +102,7 @@
   color: inherit;
 }
 
+/* .showcase-rotator__stage — Marco cuadrado donde rotan las imágenes. */
 .showcase-rotator__stage {
   position: relative;
   width: 100%;
@@ -101,6 +113,7 @@
   margin-bottom: 0.75rem;
 }
 
+/* .showcase-rotator__image — Imagen del rotador; oculta por defecto. */
 .showcase-rotator__image {
   position: absolute;
   top: 0;
@@ -114,11 +127,13 @@
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
+/* Imagen activa: visible con transición. */
 .showcase-rotator__image.is-active {
   opacity: 1;
   visibility: visible;
 }
 
+/* .showcase-rotator__dots — Indicadores de posición sobre la imagen. */
 .showcase-rotator__dots {
   position: absolute;
   bottom: 6px;
@@ -129,6 +144,7 @@
   z-index: 2;
 }
 
+/* Punto indicador individual. */
 .showcase-rotator__dot {
   width: 5px;
   height: 5px;
@@ -137,10 +153,12 @@
   transition: background 0.3s ease;
 }
 
+/* Punto indicador activo. */
 .showcase-rotator__dot.is-active {
   background: #fff;
 }
 
+/* Nombre del producto bajo la imagen. */
 .showcase-rotator__name {
   font-size: 0.8rem;
   margin: 0;
@@ -150,6 +168,7 @@
   text-overflow: ellipsis;
 }
 
+/* Precio del producto bajo la imagen. */
 .showcase-rotator__price {
   font-size: 0.8rem;
   font-weight: 600;
@@ -157,6 +176,7 @@
   margin: 0.2rem 0 0;
 }
 
+/* Responsive ≤768px: filas a 2 columnas. */
 @media (max-width: 768px) {
   .category-blocks__row {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -164,6 +184,7 @@
   }
 }
 
+/* Responsive ≤480px: 2 columnas con menos gap y padding reducido. */
 @media (max-width: 480px) {
   .category-blocks__row {
     grid-template-columns: repeat(2, minmax(0, 1fr));

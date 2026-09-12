@@ -1,4 +1,5 @@
 /* ===== Panel de filtros ===== */
+/* .catalog-filters-wrap — Contenedor del panel; colapsa cambiando su ancho. */
 .catalog-filters-wrap {
   position: relative;
   flex-shrink: 0;
@@ -7,11 +8,13 @@
   align-self: flex-start;
 }
 
+/* Estado colapsado: ancho y alto a 0. */
 .catalog-filters-wrap.is-collapsed {
   width: 0;
   height: 0;
 }
 
+/* .catalog-filters — Panel sticky con borde, sombra y padding. */
 .catalog-filters {
   width: 280px;
   height: auto;
@@ -28,6 +31,7 @@
   text-align: left;
 }
 
+/* Panel oculto cuando el wrapper está colapsado. */
 .catalog-filters-wrap.is-collapsed .catalog-filters {
   opacity: 0;
   pointer-events: none;
@@ -37,6 +41,7 @@
   overflow: hidden;
 }
 
+/* .filters-toggle — Botón para abrir/cerrar el panel (escritorio: chevron). */
 .filters-toggle {
   position: absolute;
   top: 8px;
@@ -58,11 +63,12 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* En escritorio el boton es un chevron de 28px: la etiqueta sobra. */
+/* En escritorio el botón es un chevron: la etiqueta se oculta. */
 .filters-toggle__label {
   display: none;
 }
 
+/* Hover del toggle: se resalta. */
 .filters-toggle:hover {
   opacity: 1;
   transform: scale(1.05);
@@ -70,6 +76,7 @@
   border-color: #08060d;
 }
 
+/* Cuando el panel está colapsado, el toggle se fija al borde izquierdo. */
 .catalog-filters-wrap.is-collapsed .filters-toggle {
   position: fixed;
   top: 50%;
@@ -86,10 +93,12 @@
   z-index: 100;
 }
 
+/* Hover del toggle cuando está colapsado. */
 .catalog-filters-wrap.is-collapsed .filters-toggle:hover {
   transform: translateY(-50%) scale(1.05);
 }
 
+/* Cabecera del panel: título y botón de limpiar. */
 .catalog-filters__header {
   display: flex;
   align-items: center;
@@ -99,12 +108,14 @@
   border-bottom: 2px solid var(--border);
 }
 
+/* Título del panel. */
 .catalog-filters__header h2 {
   margin: 0;
   font-size: 1.1rem;
   color: var(--text-h);
 }
 
+/* Botón "limpiar refinamientos" de InstantSearch. */
 .catalog-filters .ais-ClearRefinements-button {
   font-size: 0.8rem;
   padding: 0.3rem 0.7rem;
@@ -117,24 +128,28 @@
   white-space: nowrap;
 }
 
+/* Hover del botón limpiar. */
 .catalog-filters .ais-ClearRefinements-button:hover {
   background: #ffd400;
   border-color: #08060d;
   color: #08060d;
 }
 
+/* .filter-group — Grupo de filtros con separador inferior. */
 .filter-group {
   margin-bottom: 1.5rem;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid var(--border);
 }
 
+/* El último grupo no lleva separador. */
 .filter-group:last-child {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
+/* Título del grupo de filtros. */
 .filter-group h3 {
   margin: 0 0 0.75rem;
   font-size: 0.8rem;
@@ -144,6 +159,7 @@
   color: var(--accent);
 }
 
+/* Lista de refinamientos (checkboxes). */
 .ais-RefinementList-list {
   list-style: none;
   padding: 0;
@@ -175,6 +191,7 @@
   word-break: break-word;
 }
 
+/* Contador de resultados junto a cada filtro. */
 .ais-RefinementList-count {
   flex-shrink: 0;
   background: var(--accent-bg);
@@ -186,6 +203,7 @@
   margin-top: 1px;
 }
 
+/* Checkbox de cada refinamiento. */
 .ais-RefinementList-checkbox {
   accent-color: var(--accent);
   width: 16px;
@@ -195,6 +213,7 @@
   cursor: pointer;
 }
 
+/* Botón "ver más" de la lista de refinamientos. */
 .ais-RefinementList-showMore {
   margin-top: 0.6rem;
   font-size: 0.8rem;
@@ -213,6 +232,7 @@
   color: #08060d;
 }
 
+/* Formulario de rango (precio, año, etc.). */
 .ais-RangeInput-form {
   display: flex;
   align-items: flex-end;
@@ -232,6 +252,7 @@
   min-width: 70px;
 }
 
+/* Etiqueta "Mínimo" sobre el primer input. */
 .ais-RangeInput-label:nth-of-type(1)::before {
   content: 'Mínimo';
   font-size: 0.62rem;
@@ -242,6 +263,7 @@
   opacity: 0.6;
 }
 
+/* Etiqueta "Máximo" sobre el segundo input. */
 .ais-RangeInput-label:nth-of-type(2)::before {
   content: 'Máximo';
   font-size: 0.62rem;
@@ -252,10 +274,12 @@
   opacity: 0.6;
 }
 
+/* Separador "—" entre inputs: oculto. */
 .ais-RangeInput-separator {
   display: none;
 }
 
+/* Inputs del rango. */
 .ais-RangeInput-input {
   width: 100%;
   padding: 0.5rem 0.4rem;
@@ -282,6 +306,7 @@
   font-size: 0.75rem;
 }
 
+/* Botón "Aplicar" del rango. */
 .ais-RangeInput-submit {
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -304,6 +329,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Input del buscador dentro del panel. */
 .catalog-filters .ais-SearchBox-input {
   border-radius: 6px;
   border: 1px solid var(--border);
@@ -314,11 +340,13 @@
   font-size: 0.85rem;
 }
 
+/* Botones submit/reset del buscador: ocultos. */
 .catalog-filters .ais-SearchBox-submit,
 .catalog-filters .ais-SearchBox-reset {
   display: none;
 }
 
+/* Responsive ≤1024px: panel un poco más angosto. */
 @media (max-width: 1024px) {
   .catalog-filters-wrap,
   .catalog-filters {
@@ -326,6 +354,7 @@
   }
 }
 
+/* Responsive ≤768px: panel a ancho completo y apilado. */
 @media (max-width: 768px) {
   .catalog-filters-wrap,
   .catalog-filters-wrap.is-collapsed {
@@ -342,13 +371,13 @@
     padding: 1.25rem;
   }
 
+  /* En móvil el panel colapsado se oculta con display. */
   .catalog-filters-wrap.is-collapsed .catalog-filters {
     display: none;
   }
 
-  /* El toggle era el UNICO control del panel y estaba oculto justo en
-     movil, donde el sidebar se apila sobre la grilla: el panel quedaba
-     abierto de forma permanente y sin manera de cerrarlo. */
+  /* El toggle se vuelve un botón full-width con etiqueta visible.
+     (Antes estaba oculto en móvil y el panel quedaba siempre abierto.) */
   .filters-toggle,
   .catalog-filters-wrap.is-collapsed .filters-toggle {
     display: flex;
@@ -370,6 +399,7 @@
     box-shadow: none;
   }
 
+  /* En móvil se oculta el chevron y se muestra la etiqueta. */
   .filters-toggle__icon {
     display: none;
   }
@@ -378,14 +408,14 @@
     display: inline;
   }
 
-  /* El scale(1.05) saca ~9px por lado en un boton full-width, y en tactil
-     el hover queda pegado despues del tap. */
+  /* Sin scale en hover para evitar saltos en táctil. */
   .filters-toggle:hover,
   .catalog-filters-wrap.is-collapsed .filters-toggle:hover {
     transform: none;
   }
 }
 
+/* Responsive ≤480px: inputs de rango en fila flexible. */
 @media (max-width: 480px) {
   .ais-RangeInput-form {
     flex-direction: row;

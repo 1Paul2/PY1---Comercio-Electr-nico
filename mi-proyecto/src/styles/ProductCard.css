@@ -1,3 +1,4 @@
+/* .product-card — Tarjeta de producto en la grilla del catálogo. */
 .product-card {
   display: flex;
   flex-direction: column;
@@ -11,12 +12,14 @@
   height: 100%;
 }
 
+/* Hover: sombra, se eleva un poco y borde con color de acento. */
 .product-card:hover {
   box-shadow: var(--shadow);
   transform: translateY(-3px);
   border-color: var(--accent);
 }
 
+/* Marco de la imagen, proporción 4:3. */
 .product-card__image {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -24,6 +27,7 @@
   background: var(--code-bg);
 }
 
+/* Imagen ajustada al marco con object-fit: cover. */
 .product-card__image img {
   width: 100%;
   height: 100%;
@@ -31,6 +35,7 @@
   display: block;
 }
 
+/* Bloque de información bajo la imagen. */
 .product-card__info {
   padding: 0.75rem 1rem;
   display: flex;
@@ -40,6 +45,7 @@
   min-width: 0;
 }
 
+/* Categoría en mayúsculas, recortada con elipsis si es larga. */
 .product-card__category {
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -51,6 +57,7 @@
   white-space: nowrap;
 }
 
+/* Título del producto limitado a 2 líneas. */
 .product-card__title {
   margin: 0;
   font-size: 0.95rem;
@@ -67,6 +74,7 @@
 /* margin: 0 no es cosmético. Es un <p> y global.css no trae reset de
    tipografía, así que heredaba el margen de 1em del user-agent:
    32px muertos por tarjeta, multiplicados por toda la grilla. */
+/* Marca del producto, recortada con elipsis. */
 .product-card__brand {
   margin: 0;
   font-size: 0.8rem;
@@ -81,6 +89,7 @@
    sin whitespace entre ellos (JSX lo elimina), así que su min-content es
    la SUMA de ambos y arrastra el min-content de toda la tarjeta hacia
    arriba, desbordando la grilla en pantallas angostas. */
+/* Pie de la tarjeta: precio y stock, separados a los extremos. */
 .product-card__footer {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +100,7 @@
   padding-top: 0.25rem;
 }
 
+/* Precio del producto. */
 .product-card__price {
   font-weight: 700;
   color: var(--text-h);
@@ -98,16 +108,19 @@
   line-height: 1.2;
 }
 
+/* Etiqueta de stock. */
 .product-card__stock {
   font-size: 0.75rem;
   white-space: nowrap;
 }
 
+/* Estado: en stock (verde). */
 .in-stock {
   color: var(--success);
   font-weight: 600;
 }
 
+/* Estado: sin stock (rojo). */
 .out-of-stock {
   color: var(--danger);
   font-weight: 600;

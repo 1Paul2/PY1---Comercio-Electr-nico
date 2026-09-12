@@ -1,3 +1,4 @@
+/* .home-hero — Hero de inicio con imagen de fondo y overlay oscuro. */
 .home-hero {
   position: relative;
   max-width: 1600px;
@@ -18,6 +19,7 @@
   box-sizing: border-box;
 }
 
+/* Título del hero. */
 .home-hero h1 {
   font-size: 2.2rem;
   line-height: 1.25;
@@ -26,6 +28,7 @@
   font-weight: 800;
 }
 
+/* Subtítulo del hero. */
 .home-hero p {
   color: #d1d5db;
   font-size: 1.05rem;
@@ -34,6 +37,7 @@
   line-height: 1.5;
 }
 
+/* .home-value-props — Contenedor de la sección de propuestas de valor. */
 .home-value-props {
   max-width: 1500px;
   width: 95%;
@@ -41,12 +45,14 @@
   padding: 0 1rem;
 }
 
+/* .value-props — Grid de 4 columnas para las tarjetas de valor. */
 .value-props {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.25rem;
 }
 
+/* .value-prop — Tarjeta individual con hover elevado. */
 .value-prop {
   padding: 1.75rem 1.25rem;
   border: 1px solid var(--border);
@@ -58,6 +64,7 @@
   overflow: hidden;
 }
 
+/* Borde superior animado de la tarjeta (aparece en hover). */
 .value-prop::before {
   content: '';
   position: absolute;
@@ -69,16 +76,19 @@
   transition: background 0.2s ease;
 }
 
+/* Hover de la tarjeta: se eleva y muestra borde y sombra. */
 .value-prop:hover {
   transform: translateY(-3px);
   border-color: rgba(255, 212, 0, 0.4);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
 }
 
+/* En hover, el borde superior toma el color de marca. */
 .value-prop:hover::before {
   background: var(--brand);
 }
 
+/* Título de la tarjeta de valor. */
 .value-prop h3 {
   margin: 0 0 0.6rem;
   font-size: 1rem;
@@ -87,6 +97,7 @@
   line-height: 1.3;
 }
 
+/* Texto de la tarjeta de valor. */
 .value-prop p {
   margin: 0;
   font-size: 0.85rem;
@@ -95,6 +106,7 @@
   opacity: 0.85;
 }
 
+/* Responsive ≤1024px: tarjetas a 2 columnas. */
 @media (max-width: 1024px) {
   .value-props {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -106,6 +118,7 @@
   }
 }
 
+/* Responsive ≤768px: hero con menos padding y tipografía menor. */
 @media (max-width: 768px) {
   .home-hero {
     padding: 3.5rem 1rem 2.5rem;
@@ -121,6 +134,7 @@
   }
 }
 
+/* Responsive ≤480px: tarjetas a 2 columnas más compactas y hero reducido. */
 @media (max-width: 480px) {
   .value-props {
     grid-template-columns: repeat(2, minmax(0, 1fr));

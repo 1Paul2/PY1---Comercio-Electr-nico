@@ -1,6 +1,7 @@
 /* Header de marca + búsqueda instantánea, usado en Home, Productos y la
    vista de detalle de producto. */
 
+/* .search-header — Barra superior sticky con fondo amarillo degradado. */
 .search-header {
   padding: 10px 32px;
   display: flex;
@@ -16,6 +17,7 @@
   width: 100%;
 }
 
+/* Bloque izquierdo: logo + navegación. */
 .search-header__left {
   display: flex;
   align-items: center;
@@ -23,6 +25,7 @@
   flex-shrink: 0;
 }
 
+/* Logo del sitio (texto con ícono). */
 .site-header__logo {
   display: flex;
   align-items: center;
@@ -44,11 +47,13 @@
   font-size: 24px;
 }
 
+/* Navegación principal del header. */
 .site-header__nav {
   display: flex;
   gap: 8px;
 }
 
+/* Enlaces de navegación. */
 .site-header__nav a {
   color: #08060d;
   text-decoration: none;
@@ -64,6 +69,7 @@
   background: rgba(8, 6, 13, 0.08);
 }
 
+/* Subrayado animado al hacer hover o estar activo. */
 .site-header__nav a::after {
   content: '';
   position: absolute;
@@ -81,17 +87,20 @@
   width: 60%;
 }
 
+/* Bloque central: buscador. */
 .search-header__center {
   flex: 1;
   max-width: 560px;
   min-width: 180px;
 }
 
+/* Envoltorio relativo del buscador (para el ícono absoluto). */
 .search-wrapper {
   position: relative;
   width: 100%;
 }
 
+/* Ícono de lupa dentro del input. */
 .search-icon {
   position: absolute;
   left: 14px;
@@ -102,6 +111,7 @@
   opacity: 0.7;
 }
 
+/* Input del buscador (Algolia InstantSearch). */
 .search-header .ais-SearchBox-input {
   width: 100%;
   padding: 0.65rem 1rem 0.65rem 44px;
@@ -116,6 +126,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
+/* Input enfocado. */
 .search-header .ais-SearchBox-input:focus {
   border-color: #08060d;
   background: rgba(255, 255, 255, 1);
@@ -127,17 +138,20 @@
   opacity: 0.7;
 }
 
+/* Botones submit/reset del widget: ocultos. */
 .search-header .ais-SearchBox-submit,
 .search-header .ais-SearchBox-reset {
   display: none;
 }
 
+/* Bloque derecho del header (acciones, tema, etc.). */
 .search-header__right {
   flex-shrink: 0;
   display: flex;
   align-items: center;
 }
 
+/* Responsive ≤768px: header en dos filas con el buscador abajo. */
 @media (max-width: 768px) {
   .search-header {
     flex-wrap: wrap;
@@ -166,6 +180,7 @@
   }
 }
 
+/* Responsive ≤480px: nav y logo más compactos. */
 @media (max-width: 480px) {
   .site-header__nav {
     gap: 4px;

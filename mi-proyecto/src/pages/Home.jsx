@@ -1,3 +1,6 @@
+/* Home.jsx — Página de inicio: hero, categorías destacadas y propuestas de valor. */
+
+/* Imports: InstantSearch, cliente de búsqueda, header, showcase, footer y estilos. */
 import { InstantSearch } from 'react-instantsearch'
 import { searchClient } from '../features/catalog/searchClient'
 import SearchHeader from '../features/catalog/SearchHeader'
@@ -5,6 +8,7 @@ import CategoryShowcase from '../features/catalog/CategoryShowcase'
 import Footer from '../components/Footer'
 import '../styles/Home.css'
 
+/* Datos estáticos de las 4 propuestas de valor que se muestran en la home. */
 const VALUE_PROPS = [
   {
     title: 'Stock en tiempo real',
@@ -24,29 +28,35 @@ const VALUE_PROPS = [
   },
 ]
 
+/* Componente Home: todo dentro de InstantSearch para habilitar la búsqueda. */
 function Home() {
   return (
     <InstantSearch searchClient={searchClient} indexName="grupo-07_products">
+      {/* Header con buscador; al buscar redirige a /productos. */}
       <SearchHeader redirectSearchTo="/productos" />
 
+      {/* Hero de bienvenida con título y subtítulo. */}
       <section className="home-hero">
         <h1>Encontrá la maquinaria y repuestos que tu proyecto necesita</h1>
         <p>Stock actualizado en tiempo real, precios transparentes y cotización en un clic.</p>
       </section>
 
+      {/* Bloques de categorías con imagen rotativa. */}
       <CategoryShowcase />
 
-          <section className="home-value-props">
-            <div className="value-props">
-              {VALUE_PROPS.map((prop) => (
-                <div key={prop.title} className="value-prop">
-                  <h3>{prop.title}</h3>
-                  <p>{prop.text}</p>
-                </div>
-              ))}
+      {/* Sección de propuestas de valor generada desde VALUE_PROPS. */}
+      <section className="home-value-props">
+        <div className="value-props">
+          {VALUE_PROPS.map((prop) => (
+            <div key={prop.title} className="value-prop">
+              <h3>{prop.title}</h3>
+              <p>{prop.text}</p>
             </div>
-          </section>
-          
+          ))}
+        </div>
+      </section>
+
+      {/* Footer del sitio. */}
       <Footer />
     </InstantSearch>
   )
