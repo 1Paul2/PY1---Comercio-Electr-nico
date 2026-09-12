@@ -1,3 +1,4 @@
+/* .counter — Botón/contador con borde que cambia en hover y focus. */
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -17,6 +18,7 @@
   }
 }
 
+/* .hero — Logo base + imágenes superpuestas con transformaciones 3D. */
 .hero {
   position: relative;
 
@@ -56,6 +58,7 @@
   }
 }
 
+/* #center — Contenedor flex en columna, centrado, con gap adaptable. */
 #center {
   display: flex;
   flex-direction: column;
@@ -70,6 +73,7 @@
   }
 }
 
+/* #next-steps — Sección de pasos en fila; pasa a columna en móvil. */
 #next-steps {
   display: flex;
   border-top: 1px solid var(--border);
@@ -95,6 +99,7 @@
   }
 }
 
+/* #docs — Columna de documentación con borde derecho (inferior en móvil). */
 #docs {
   border-right: 1px solid var(--border);
 
@@ -104,6 +109,7 @@
   }
 }
 
+/* #next-steps ul — Lista de enlaces sociales tipo "pill" con hover. */
 #next-steps ul {
   list-style: none;
   padding: 0;
@@ -153,6 +159,7 @@
   }
 }
 
+/* #spacer — Separador vertical de 88px (48px en móvil). */
 #spacer {
   height: 88px;
   border-top: 1px solid var(--border);
@@ -161,6 +168,7 @@
   }
 }
 
+/* .ticks — Triángulos decorativos a izquierda y derecha con ::before/::after. */
 .ticks {
   position: relative;
   width: 100%;
