@@ -1,6 +1,13 @@
 import { RefinementList, RangeInput, ClearRefinements } from 'react-instantsearch'
 import '../../styles/Filters.css'
 
+/**
+ * Nombre: Filters
+ * Descripción: Muestra el panel de filtros del catálogo con categorías, marcas y rango de precio.
+ * Entradas: isOpen: indica si el panel está abierto; onToggle: función para alternar su estado.
+ * Salidas: JSX con el bloque de filtros interactivo.
+ * Excepciones: No hay.
+ */
 function Filters({ isOpen, onToggle }) {
   return (
     <div className={`catalog-filters-wrap ${isOpen ? '' : 'is-collapsed'}`}>
