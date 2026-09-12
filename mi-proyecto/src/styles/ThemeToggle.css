@@ -1,0 +1,66 @@
+/* .theme-toggle — Botón circular para cambiar entre tema claro y oscuro. */
+.theme-toggle {
+  background: #08060d;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  perspective: 200px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+/* Hover: se aclara y crece un poco. */
+.theme-toggle:hover {
+  background: #1a1622;
+  border-color: rgba(255, 255, 255, 0.55);
+  transform: scale(1.08);
+}
+
+/* Foco visible para navegación con teclado. */
+.theme-toggle:focus-visible {
+  outline: 2px solid #08060d;
+  outline-offset: 2px;
+}
+
+/* Contenedor interno que rota en 3D (efecto flip). */
+.theme-toggle__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+}
+
+/* Estado girado: muestra la cara trasera. */
+.theme-toggle__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+/* Cara del flip (icono del tema). */
+.theme-toggle__face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  font-size: 18px;
+}
+
+/* Ambas caras sin fondo propio. */
+.theme-toggle__face--front,
+.theme-toggle__face--back {
+  background: transparent;
+}
+
+/* Cara trasera ya rotada para el efecto flip. */
+.theme-toggle__face--back {
+  transform: rotateY(180deg);
+}

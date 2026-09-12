@@ -1,0 +1,29 @@
+/* App.jsx — Define el enrutado principal y envuelve la app con el tema. */
+
+/* Imports: componentes de rutas, páginas y el proveedor de tema. */
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Productos from './pages/Productos'
+import ProductoDetalle from './pages/ProductoDetalle'
+import { ThemeProvider } from './context/ThemeContext'
+
+/* Componente App: envuelve las rutas con ThemeProvider y define las 3 rutas. */
+function App() {
+  return (
+    <ThemeProvider>
+      <Routes>
+        {/* Ruta raíz: página de inicio. */}
+        <Route path="/" element={<Home />} />
+
+        {/* Ruta de listado de productos. */}
+        <Route path="/productos" element={<Productos />} />
+
+        {/* Ruta de detalle: recibe :id por URL. */}
+        <Route path="/producto/:id" element={<ProductoDetalle />} />
+      </Routes>
+    </ThemeProvider>
+  )
+}
+
+/* Exporta App como componente por defecto. */
+export default App

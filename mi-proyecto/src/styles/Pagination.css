@@ -1,0 +1,80 @@
+/* .catalog-pagination — Contenedor de la paginación, centrado. */
+.catalog-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Lista de páginas (widget de InstantSearch). */
+.ais-Pagination-list {
+  list-style: none;
+  display: flex;
+  gap: 0.4rem;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cada ítem de paginación como flex inline. */
+.ais-Pagination-item {
+  display: inline-flex;
+}
+
+/* Enlace/botón de cada página. */
+.ais-Pagination-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+/* Hover y página activa: fondo amarillo con borde oscuro. */
+.ais-Pagination-link:hover,
+.ais-Pagination-item--selected .ais-Pagination-link {
+  background: #ffd400;
+  border-color: #08060d;
+  color: #08060d;
+}
+
+/* La página activa va en negrita. */
+.ais-Pagination-item--selected .ais-Pagination-link {
+  font-weight: 700;
+}
+
+/* Páginas deshabilitadas (anterior/siguiente fuera de rango). */
+.ais-Pagination-item--disabled .ais-Pagination-link {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Con padding={2} el widget muestra hasta 9 controles:
+   9 x 38px + 8 x 6.4px de gap = 393px contra 343px disponibles a 375px.
+   Como la lista tiene flex-wrap, no desbordaba: caía en dos filas. */
+/* Responsive ≤480px: botones más compactos para que quepan en una fila. */
+@media (max-width: 480px) {
+  .catalog-pagination {
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .ais-Pagination-list {
+    gap: 0.25rem;
+  }
+
+  .ais-Pagination-link {
+    min-width: 32px;
+    height: 36px;
+    padding: 0 6px;
+    font-size: 0.85rem;
+  }
+}

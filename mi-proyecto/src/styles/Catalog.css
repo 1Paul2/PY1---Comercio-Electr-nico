@@ -1,0 +1,120 @@
+/* .catalog — Contenedor principal del catálogo, con ancho máximo y centrado. */
+.catalog {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+
+/* .catalog__body — Fila que coloca sidebar y resultados uno al lado del otro. */
+.catalog__body {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+}
+
+/* .catalog__results — Columna de resultados; ocupa el espacio restante. */
+.catalog__results {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+}
+
+/* .catalog__grid — Grid de 4 columnas para las tarjetas de producto. */
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* .catalog-empty — Estado vacío: caja centrada con borde punteado y fondo suave. */
+.catalog-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+  padding: 4rem 1.5rem;
+  margin: 0.5rem 0;
+  border: 1px dashed var(--border);
+  border-radius: 12px;
+  background: var(--accent-bg);
+}
+
+/* Icono del estado vacío, atenuado. */
+.catalog-empty__icon {
+  color: var(--text);
+  opacity: 0.6;
+}
+
+/* Título del estado vacío. */
+.catalog-empty__title {
+  margin: 0.25rem 0 0;
+  color: var(--text-h);
+  font-size: 1.15rem;
+}
+
+/* Texto descriptivo del estado vacío. */
+.catalog-empty__text {
+  margin: 0;
+  max-width: 32rem;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+/* Botón de acción del estado vacío. */
+.catalog-empty__button {
+  margin-top: 0.5rem;
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--brand-strong);
+  background: var(--brand);
+  color: var(--brand-ink);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* Hover del botón: usa el color de marca más fuerte. */
+.catalog-empty__button:hover {
+  background: var(--brand-strong);
+}
+
+/* Responsive ≤1024px: menos padding y grid de 3 columnas. */
+@media (max-width: 1024px) {
+  .catalog {
+    padding: 1.5rem;
+  }
+
+  .catalog__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Responsive ≤768px: grid de 2 columnas y body en columna. */
+@media (max-width: 768px) {
+  .catalog__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .catalog__body {
+    flex-direction: column;
+  }
+
+  .catalog {
+    padding: 1rem;
+  }
+}
+
+/* Responsive ≤480px: 1 columna y menos separación. */
+@media (max-width: 480px) {
+  .catalog__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+}
