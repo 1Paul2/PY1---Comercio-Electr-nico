@@ -4,7 +4,7 @@ import babel from '@rolldown/plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/PY1---Comercio-Electr-nico/',
+  base: '/PY1---Comercio-Electronico/',
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] })
