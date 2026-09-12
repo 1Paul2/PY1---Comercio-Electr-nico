@@ -1,6 +1,13 @@
 import { useTheme } from '../context/ThemeContext'
 import '../styles/ThemeToggle.css'
 
+/**
+ * Nombre: ThemeToggle
+ * Descripción: Permite alternar entre los modos claro y oscuro de la interfaz.
+ * Entradas: No recibe parámetros.
+ * Salidas: JSX con un botón para cambiar el tema activo.
+ * Excepciones: No hay.
+ */
 function ThemeToggle() {
   const { theme, toggleTheme } = useTheme()
 
